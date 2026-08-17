@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cyber Essentials Self-Assessment</title>
+  <meta name="description" content="An unofficial, offline-first self-assessment tool for the IASME Cyber Essentials question set." />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="assets/icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+  <meta name="theme-color" content="#0b5fa5" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header id="app-header">
+    <div class="header-brand">
+      <span class="brand-mark" aria-hidden="true">&#9733;</span>
+      <h1>Cyber Essentials Self-Assessment</h1>
+    </div>
+    <div class="header-actions">
+      <button id="theme-toggle-btn" type="button" title="Toggle light/dark theme">&#9788;</button>
+      <button id="print-btn" type="button">Print / Save PDF</button>
+    </div>
+  </header>
+
+  <div id="app-layout">
+    <button id="sidebar-toggle-btn" type="button" aria-label="Toggle sidebar">&#9776;</button>
+    <aside id="sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-heading-row">
+          <h2>Assessments</h2>
+          <button id="new-assessment-btn" type="button" title="New assessment">+ New</button>
+        </div>
+        <ul id="assessment-list"></ul>
+        <div class="sidebar-buttons">
+          <button id="delete-assessment-btn" type="button">Delete</button>
+        </div>
+      </div>
+      <div class="sidebar-section">
+        <h2>Import / Export</h2>
+        <div class="sidebar-buttons">
+          <button id="export-btn" type="button">Export (.json)</button>
+          <button id="import-btn" type="button">Import (.json)</button>
+          <input id="import-input" type="file" accept="application/json" hidden />
+        </div>
+      </div>
+    </aside>
+
+    <main id="content">
+      <div id="empty-state">
+        <p>No assessment selected. Create a new assessment to get started.</p>
+      </div>
+
+      <div id="app-main" hidden>
+        <div id="org-name-row">
+          <label for="org-name-input">Assessment name</label>
+          <input id="org-name-input" type="text" placeholder="e.g. Acme Ltd — 2026 renewal" />
+        </div>
+
+        <section id="dashboard">
+          <h2>Progress</h2>
+          <div class="progress-track"><div id="progress-fill" class="progress-fill"></div></div>
+          <p id="progress-label"></p>
+          <div id="compliance-summary"></div>
+          <div id="section-bars"></div>
+        </section>
+
+        <div id="framework"></div>
+      </div>
+    </main>
+  </div>
+
+  <div id="toast" role="status"></div>
+
+  <dialog id="confirm-dialog">
+    <p id="confirm-message"></p>
+    <div class="dialog-actions">
+      <button id="confirm-cancel-btn" type="button">Cancel</button>
+      <button id="confirm-ok-btn" type="button" class="danger">Delete</button>
+    </div>
+  </dialog>
+
+  <footer id="app-footer">
+    <p>
+      Unofficial self-assessment aid. Question text and guidance reproduced from the
+      <a href="https://iasme.co.uk/cyber-essentials/" target="_blank" rel="noopener">IASME Cyber Essentials</a>
+      question set (Danzell, 2026, v16.3) &mdash; see <a href="README.md">README</a> for attribution.
+      This tool is not affiliated with IASME or NCSC and does not submit or store data anywhere but your browser.
+    </p>
+  </footer>
+
+  <script src="assets/data.js"></script>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
