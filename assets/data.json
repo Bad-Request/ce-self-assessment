@@ -1,0 +1,2167 @@
+{
+  "sections": [
+    {
+      "id": "A1",
+      "title": "Organisation",
+      "description": "In this section we need to know a little about how your organisation is set up so we can ask you the most appropriate questions.",
+      "links": []
+    },
+    {
+      "id": "A2",
+      "title": "Scope of Assessment",
+      "description": "In this section, you need to explain which parts of your organisation’s IT system you want to include in the Cyber Essentials certification. This is called the \"scope.\" The scope can cover either your entire organisation or just a specific part of it (for example, only the UK branch of a multinational company).\n\nIf you’re not including the whole organisation, this is called a \"partial scope.\" In this case, you must clearly list any networks or systems that are excluded, this information will not be made public.\n\nYou’ll also need to provide details about all devices and services that are connected to the internet and access your organisation’s data or services. This includes computers, laptops, servers, mobile phones, tablets, firewalls/routers, and cloud services.\n\nDevelopment, testing, and penetration testing (pentesting) networks should not be included in the scope. These networks must be kept separate from the rest of your IT systems using a firewall or VLAN.\n\nIt’s important to note that you cannot exclude devices used by employees (such as laptops, desktops, or mobile phones) from the scope. Similarly, cloud services must always be included in the scope.",
+      "links": [
+        {
+          "text": "Knowledge Hub - Scope",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2576023683/Scope"
+        },
+        {
+          "text": "Scope - FAQ",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2576974115/Scope+%3A+FAQ"
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "title": "Insurance",
+      "description": "All organisations with a head office domiciled in the UK and a turnover of less than £20 million can opt into automatic cyber insurance if they achieve Cyber Essentials certification. The insurance is free of charge but you can opt out of the insurance element if you choose. This will not change the price of the assessment package. The answers to these questions will not affect the result of your Cyber Essentials assessment.",
+      "links": []
+    },
+    {
+      "id": "A4",
+      "title": "Firewalls",
+      "description": "Firewall is the generic name for a piece of software or a hardware device which provides technical protection between your network devices and the Internet, referred to in the question set as boundary firewalls. Your organisation will have physical, virtual or software firewalls at your internet boundaries. Software firewalls are included within all major operating systems for laptops, desktops and servers and need to be configured correctly to provide effective protection.\n\nQuestions in this section apply to: boundary firewalls, desktop computers, laptops, routers, servers, IaaS, PaaS, and SaaS.",
+      "links": [
+        {
+          "text": "Knowledge Hub - Firewalls",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2576351257/Control+%3A+Firewalls"
+        },
+        {
+          "text": "Firewalls - FAQ",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2644607074/Firewalls+%3A+FAQ"
+        }
+      ]
+    },
+    {
+      "id": "A5",
+      "title": "Secure Configuration",
+      "description": "Computers and cloud services are often not secure upon default installation or setup. An ‘out-of-the-box’ set-up can often include an administrative account with a standard, publicly known default password, one or more unnecessary user accounts enabled (sometimes with special access privileges) and pre-installed but unnecessary applications or services. All of these present security risks.\n\nQuestions in this section apply to: servers, desktop computers, laptops, thin clients, tablets, mobile phones, IaaS, PaaS and SaaS.",
+      "links": [
+        {
+          "text": "Knowledge Hub - Secure Configuration",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2576253017/Control+%3A+Secure+Configuration"
+        },
+        {
+          "text": "Secure configuration - FAQ",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2576842897/Secure+Configuration+-+FAQ"
+        }
+      ]
+    },
+    {
+      "id": "A6",
+      "title": "Security Update Management",
+      "description": "To protect your organisation, you should ensure that all your software is always up to date with the latest security updates. If any of your in-scope devices are using an operating system which is no longer supported and you are not being provided with regular vulnerability fixes from the vendor, then you will not be awarded certification. Mobile phones and tablets are in-scope and must also use an operating system that is still supported by the manufacturer.\n\nQuestions in this section apply to: servers, desktop computers, laptops, tablets, thin clients, mobile phones, routers, firewalls, IaaS and PaaS cloud services.",
+      "links": [
+        {
+          "text": "Knowledge Hub - Security Update Management",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2576252995/Control+%3A+Security+Update+Management"
+        },
+        {
+          "text": "Security Update Management - FAQ",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2576842966/Security+Update+Management+%3A+FAQ"
+        }
+      ]
+    },
+    {
+      "id": "A7",
+      "title": "User Access Control",
+      "description": "It is important to only give users access to the resources and data necessary for their roles, and no more. All users need to have unique accounts and should not be carrying out day-to-day tasks such as invoicing or dealing with e-mail whilst logged on as a user with administrator privileges which allow significant changes to the way your computer systems work.",
+      "links": [
+        {
+          "text": "Knowledge Hub - User Access Control",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2575663247/Control+%3A+User+Access"
+        },
+        {
+          "text": "User Access Control - FAQ",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2576646422/User+Access+Control+%3A+FAQ"
+        }
+      ]
+    },
+    {
+      "id": "A8",
+      "title": "Malware Protection",
+      "description": "Malware (such as computer viruses) is generally used to steal or damage information. Malware is often used in conjunction with other kinds of attack such as ‘phishing’ and social network sites to provide a focussed attack on an organisation. Anti-malware solutions (including anti-virus) are available for most devices and operating systems and should be used on all devices in scope.",
+      "links": [
+        {
+          "text": "Knowledge Hub - Malware Protection",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2575925382/Control+%3A+Malware+Protection"
+        },
+        {
+          "text": "Malware Protection - FAQ",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2577498118/Malware+Protection+%3A+FAQ"
+        }
+      ]
+    },
+    {
+      "id": "ATT",
+      "title": "Attestation",
+      "description": "Final sign-off before submitting your assessment.",
+      "links": []
+    }
+  ],
+  "questions": [
+    {
+      "id": "A1.1",
+      "section": "A1",
+      "subsection": "Your Organisation",
+      "text": "What is your organisation's name?",
+      "guidance": "The answer given in A1.1 should be the name of just one legal entity, which will be displayed on your certificate. \nPlease ensure it is accurate and does not exceed 150 characters. \nAlthough the name will be one legal entity, you can include a trading name (trading as). \nIf the scope of this assessment includes other legal entities, answer yes to Question A1.6 and add the specific details for those entities in A1.6.1.\nIf you need guidance on Legal Entities and if they can be included on your Cyber Essentials certificate, please view our Legal Entities guidance:",
+      "guidanceLinks": [
+        {
+          "text": "Legal Entities sharing a Cyber Essentials Certification",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/4185489519/Entities+sharing+a+Cyber+Essentials+Certification"
+        }
+      ],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A1.2",
+      "section": "A1",
+      "subsection": "Your Organisation",
+      "text": "What type of organisation are you?",
+      "guidance": "“LTD” – Limited Company (Ltd or PLC)\n“LLP” – Limited Liability Partnership (LLP)\n“CIC” – Community Interest Company (CIC)\n“COP” – Cooperative\n“MTL” – Other Registered Mutual (Community Benefit Society, Credit Union, Building Society, Friendly Society)\n“CHA” – Registered Charity\n“GOV” – Government Agency or Public Body\n“SOL” – Sole Trader\n“PRT” – Other Partnership\n“SOC” – Other Club/ Society\n“OTH” – Other Organisation",
+      "guidanceLinks": [],
+      "answerType": "choice",
+      "options": [
+        {
+          "value": "LTD",
+          "label": "Limited Company (Ltd or PLC)"
+        },
+        {
+          "value": "LLP",
+          "label": "Limited Liability Partnership (LLP)"
+        },
+        {
+          "value": "CIC",
+          "label": "Community Interest Company (CIC)"
+        },
+        {
+          "value": "COP",
+          "label": "Cooperative"
+        },
+        {
+          "value": "MTL",
+          "label": "Other Registered Mutual (Community Benefit Society, Credit Union, Building Society, Friendly Society)"
+        },
+        {
+          "value": "CHA",
+          "label": "Registered Charity"
+        },
+        {
+          "value": "GOV",
+          "label": "Government Agency or Public Body"
+        },
+        {
+          "value": "SOL",
+          "label": "Sole Trader"
+        },
+        {
+          "value": "PRT",
+          "label": "Other Partnership"
+        },
+        {
+          "value": "SOC",
+          "label": "Other Club/Society"
+        },
+        {
+          "value": "OTH",
+          "label": "Other Organisation"
+        }
+      ],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A1.3",
+      "section": "A1",
+      "subsection": "Your Organisation",
+      "text": "How many employees are there in the organisation?",
+      "guidance": "Please provide the number of people who are working for your organisation, including all legal entities.\n\nThis would include volunteers, agency workers, contractors and others who have access to your organisational data.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A1.4",
+      "section": "A1",
+      "subsection": "Your Organisation",
+      "text": "What is your organisation's registration number?",
+      "guidance": "Please enter the registered organisation number for the primary legal entity only. Your answer must not exceed 20 characters.\nThe organisation number you provide must correspond to the Organisation name entered in A1.1.\n\nIf you are a Limited Company (LTD), a Limited Liability Partnership (LLP), or a Community Interest Company (CIC) in the UK, the organisation number must be eight numbers long or six numbers with a leading two letter prefix (eg 01234567 or SC012345).\nIf you selected Government Agency, Sole Trader, Other Partnership, Other Club/Society, or Other Organisation in A1.2, please enter \"none.\" \nIf your country does not issue company numbers, provide a unique identifier such as a DUNS number.\n\nIf you are registered at Companies House, your registration number can be found here:",
+      "guidanceLinks": [
+        {
+          "text": "Companies House",
+          "url": "https://www.gov.uk/get-information-about-a-company"
+        }
+      ],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A1.5",
+      "section": "A1",
+      "subsection": "Your Organisation",
+      "text": "What is your organisation's registered address?",
+      "guidance": "Please provide the legal registered address for your organisation.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A1.5.1",
+      "section": "A1",
+      "subsection": "Your Organisation",
+      "text": "Please provide the operational addresses, if different to your registered address.",
+      "guidance": "Please provide the address or addresses of the locations where your organisation operates. This does not include the addresses of home/remote workers.\n\nEntities or companies require different assessments in the following cases:\n\nDifferent Legally Responsible Persons: If the entities do not share the same director or board-level member who can sign off on the assessment.\n\nDifferent Network Infrastructure: If the entities do not share the same network infrastructure.\n\nSeparate Legal Entities: If the entities are separate companies with no shared governance or oversight.",
+      "guidanceLinks": [
+        {
+          "text": "Legal Entities sharing a Cyber Essentials Certification",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/4185489519/Entities+sharing+a+Cyber+Essentials+Certification"
+        }
+      ],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A1.6",
+      "section": "A1",
+      "subsection": "Certificates & Registration",
+      "text": "Do you have more than one legal entity, including subsidiaries, within the scope of this assessment?",
+      "guidance": "If the scope of this assessment includes other legal entities you must answer 'Yes' to this question and these additional entities must then be added in A1.6.1.\n\n- All additional legal entities must share the same IT infrastructure and network.\n- The board member signing off on the certificate must have the authority to represent all the listed legal entities. \n- Any legal entities not listed in Question A1.6.1 cannot be added after the certification process is complete. \n\nDepending on the way the organisation is set up, one or more assessment accounts may be required. \n\nLegal entities or companies require separate assessments in the following cases: \n\n- Different legally responsible persons: If the legal entities do not share the same director or board-level member who can sign off on the assessment. \n- Different network infrastructure: If the legal entities do not share the same network infrastructure. \n- Separate legal entities: If the legal entities are separate companies with no shared governance or oversight.\n\nIf you are unsure whether additional legal entities can be included under this certification or if they require separate certifications, please refer to our guidance for further clarification and examples.",
+      "guidanceLinks": [
+        {
+          "text": "Legal Entities sharing a Cyber Essentials Certification",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/4185489519/Entities+sharing+a+Cyber+Essentials+Certification"
+        }
+      ],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A1.6.1",
+      "section": "A1",
+      "subsection": "Certificates & Registration",
+      "text": "Please provide the name, company number and registered address of any additional legal entities that are included.",
+      "guidance": "Please use the Add Entry button to add information for the additional legal entities. (You may add as many as you need.)  \nWhen entering the company number/s, please refer to the guidance in Question A1.4. \n\nWhat happens next? \n- Included legal entities will be listed on the digital Cyber Essentials certificate of the primary legal entity and will share the same certification expiry date. \n- Once the main certificate has been issued, you will receive an email invitation to purchase separate certificates for each included legal entity, priced at £10 per certificate.\n- The name of each included legal entity will automatically be added to the Cyber Essentials certificate search and be discoverable in the Cyber Essentials Supply Check Tool, regardless of whether or not you purchase individual certificates for them.\n- If the certification for the primary legal entity is revoked, the certifications for all included legal entities will also be revoked.",
+      "guidanceLinks": [
+        {
+          "text": "Companies House",
+          "url": "https://www.gov.uk/get-information-about-a-company"
+        }
+      ],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": {
+        "questionId": "A1.6",
+        "equals": "Yes"
+      }
+    },
+    {
+      "id": "A1.7",
+      "section": "A1",
+      "subsection": "Certificates & Registration",
+      "text": "What is your main business?",
+      "guidance": "Please summarise the main occupation of your organisation. \n\nIf you have selected ‘Other’ please describe in the notes field which sector you are operating in. \n\nAcademia - Pre Schools\nAcademia - Primary Schools\nAcademia - Secondary Schools\nAcademia - Academies\nAcademia - Colleges\nAcademia - Universities\nAerospace\nAgriculture, Forestry and Fishing\nAutomotive\nCharities\nChemicals\nCivil Nuclear\nConstruction\nConsultancy\nDefence\nDiplomacy\nEmergency Services\nEnergy - Electricity\nEnergy - Gas\nEnergy - Oil\nEngineering\nEnvironmental\nFinance\nFood\nGovernment\nHealth\nHospitality - Food\nHospitality - Accommodation\nHospitality - Hotels\nIT\nIntelligence\nLaw Enforcement (Serious & Organised Crime)\nLegal\nLeisure\nManaged Services - IT Managed Services\nManaged Services - Other Managed Services\nManufacturing\nMedia\nMembership Organisations\nMining\nOther (please describe)\nPharmaceuticals\nPolitical\nPostal Services\nProperty\nR&D\nRetail\nTelecoms\nTransport - Aviation\nTransport - Maritime\nTransport - Rail\nTransport - Road\nWaste Management\nWater\nOverseas",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A1.8",
+      "section": "A1",
+      "subsection": "Certificates & Registration",
+      "text": "What is your website address?",
+      "guidance": "Please provide your website address (if you have one). This can be a Facebook/LinkedIn page if you prefer.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A1.9",
+      "section": "A1",
+      "subsection": "Certificates & Registration",
+      "text": "Is this application a renewal of an existing certification or is it the first time you have applied for certification?",
+      "guidance": "If you have previously achieved Cyber Essentials, please select \"Renewal\". If you have not previously achieved Cyber Essentials, please select \"First Time Application\".",
+      "guidanceLinks": [],
+      "answerType": "choice",
+      "options": [
+        {
+          "value": "renewal",
+          "label": "Renewal"
+        },
+        {
+          "value": "first_time",
+          "label": "First Time Application"
+        }
+      ],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A1.10",
+      "section": "A1",
+      "subsection": "Certificates & Registration",
+      "text": "What are the two main reasons for applying for certification?",
+      "guidance": "Please let us know the two main reasons why you are applying for certification. If there are multiple reasons, please select the two that are most important to you. This helps us to understand how people are using our certifications.\n\nDon’t share bid/project numbers that are protectively marked.\n\nDon’t share the names of customers who contractually require you to keep their relationship with your business confidential.",
+      "guidanceLinks": [],
+      "answerType": "choice",
+      "options": [
+        {
+          "value": "commercial_contract",
+          "label": "Required for a commercial contract"
+        },
+        {
+          "value": "government_contract",
+          "label": "Required for a government contract"
+        },
+        {
+          "value": "customer_confidence",
+          "label": "To give confidence to our customers"
+        },
+        {
+          "value": "insurer",
+          "label": "Required by insurer"
+        },
+        {
+          "value": "regulator",
+          "label": "Required by regulator"
+        },
+        {
+          "value": "grant",
+          "label": "Required for a grant"
+        },
+        {
+          "value": "improve_security",
+          "label": "To generally improve our security"
+        },
+        {
+          "value": "other",
+          "label": "Other"
+        }
+      ],
+      "multiSelect": true,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A1.10.1",
+      "section": "A1",
+      "subsection": "Certificates & Registration",
+      "text": "Who is the commercial contracting organisation?",
+      "guidance": "Please provide the name of the contracting organisation.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": {
+        "questionId": "A1.10",
+        "includes": "commercial_contract"
+      }
+    },
+    {
+      "id": "A1.10.2",
+      "section": "A1",
+      "subsection": "Certificates & Registration",
+      "text": "Who is the government contracting organisation and the contract number?",
+      "guidance": "Please provide the contract number and the contracting organisation.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": {
+        "questionId": "A1.10",
+        "includes": "government_contract"
+      }
+    },
+    {
+      "id": "A1.10.3",
+      "section": "A1",
+      "subsection": "Certificates & Registration",
+      "text": "Who is the grant authority?",
+      "guidance": "Please provide details of the grant issuing authority.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": {
+        "questionId": "A1.10",
+        "includes": "grant"
+      }
+    },
+    {
+      "id": "A1.10.4",
+      "section": "A1",
+      "subsection": "Certificates & Registration",
+      "text": "Who is the regulator?",
+      "guidance": "Please provide details of the regulator.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": {
+        "questionId": "A1.10",
+        "includes": "regulator"
+      }
+    },
+    {
+      "id": "A1.10.5",
+      "section": "A1",
+      "subsection": "Certificates & Registration",
+      "text": "What are the reasons you have applied for the certification which you described as \"other\"?",
+      "guidance": "Please provide a description.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": {
+        "questionId": "A1.10",
+        "includes": "other"
+      }
+    },
+    {
+      "id": "A1.11",
+      "section": "A1",
+      "subsection": "Certificates & Registration",
+      "text": "Have you read the 'Cyber Essentials Requirements for IT Infrastructure' document?",
+      "guidance": "Document is available on the NCSC Cyber Essentials website and should be read before completing this question set.",
+      "guidanceLinks": [
+        {
+          "text": "Cyber Essentials Requirements for IT Infrastructure v3.3",
+          "url": "https://www.ncsc.gov.uk/files/cyber-essentials-requirements-for-it-infrastructure-v3-3.pdf"
+        }
+      ],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": "Yes",
+      "dependsOn": null
+    },
+    {
+      "id": "A1.12",
+      "section": "A1",
+      "subsection": "Certificates & Registration",
+      "text": "Have you spoken to an assured NCSC Cyber Advisor to help with your application?",
+      "guidance": "This is a person assured by NCSC as a Cyber Essentials Cyber Advisor to provide advice on how to implement Cyber Essentials.",
+      "guidanceLinks": [
+        {
+          "text": "Find an assured Cyber Advisor",
+          "url": "https://www.ncsc.gov.uk/schemes/cyber-advisor/find-a-provider"
+        }
+      ],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A1.13",
+      "section": "A1",
+      "subsection": "Certificates & Registration",
+      "text": "Can IASME and their expert partners contact you if you experience a cyber breach?",
+      "guidance": "We would like feedback on how well the controls are protecting organisations. If you agree to this then please email security@iasme.co.uk if you do experience a cyber breach. IASME and expert partners will then contact you to find out a little more but all information will be kept confidential.",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A1.14",
+      "section": "A1",
+      "subsection": "Certificates & Registration",
+      "text": "Where did you hear about Cyber Essentials?",
+      "guidance": "Please let us know how you found out about the Cyber Essentials Scheme.",
+      "guidanceLinks": [],
+      "answerType": "choice",
+      "options": [
+        {
+          "value": "Contractual Requirement",
+          "label": "Contractual Requirement"
+        },
+        {
+          "value": "Government Contractual Requirement",
+          "label": "Government Contractual Requirement"
+        },
+        {
+          "value": "Tender",
+          "label": "Tender"
+        },
+        {
+          "value": "Customer Request",
+          "label": "Customer Request"
+        },
+        {
+          "value": "Certification Body",
+          "label": "Certification Body"
+        },
+        {
+          "value": "Cyber Advisor",
+          "label": "Cyber Advisor"
+        },
+        {
+          "value": "Cyber Resilience Centre",
+          "label": "Cyber Resilience Centre"
+        },
+        {
+          "value": "National Cyber Security Centre (NCSC)",
+          "label": "National Cyber Security Centre (NCSC)"
+        },
+        {
+          "value": "IASME",
+          "label": "IASME"
+        },
+        {
+          "value": "Internet Search",
+          "label": "Internet Search"
+        },
+        {
+          "value": "Social Media",
+          "label": "Social Media"
+        },
+        {
+          "value": "Cyber Action Toolkit",
+          "label": "Cyber Action Toolkit"
+        },
+        {
+          "value": "Other",
+          "label": "Other"
+        }
+      ],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A1.15",
+      "section": "A1",
+      "subsection": "Certificates & Registration",
+      "text": "Can IASME contact you for research purposes?",
+      "guidance": "Both IASME and the UK government occasionally need to ask questions about the process and/or benefits of the Cyber Essentials scheme for research purposes.  If you agree to this we will contact you via the email address you registered with, you are free to not respond if we do contact you.",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A1.16",
+      "section": "A1",
+      "subsection": "Certificates & Registration",
+      "text": "Have you signed up to the NCSC’s free Early Warning service?",
+      "guidance": "NCSC Early Warning Service\n\nIn this section, you need to explain which parts of your organisation’s IT system you want to include in the Cyber Essentials certification. This is called the \"scope.\" The scope can cover either your entire organisation or just a specific part of it (for example, only the UK branch of a multinational company).\n\nIf you’re not including the whole organisation, this is called a \"partial scope.\" In this case, you must clearly list any networks or systems that are excluded in section A2.2.1, this information will not be made public. \n\nYou’ll also need to provide details about all devices and services that are connected to the internet and access your organisation’s data or services. This includes computers, laptops, servers, mobile phones, tablets, firewalls/routers, and cloud services.\n\nFor most devices, you only need to provide the make (brand) and operating system. However, for firewalls and routers, you must also include the model of the device (this is required for question A2.5).\n\nDevelopment, testing, and penetration testing (pentesting) networks should not be included in the scope. These networks must be kept separate from the rest of your IT systems using a firewall or VLAN.\n\nIt’s important to note that you cannot exclude devices used by employees (such as laptops, desktops, or mobile phones) from the scope. Similarly, cloud services must always be included in the scope.\n\nFurther guidance:",
+      "guidanceLinks": [
+        {
+          "text": "NCSC Early Warning Service",
+          "url": "https://www.ncsc.gov.uk/section/active-cyber-defence/early-warning"
+        },
+        {
+          "text": "Knowledge Hub - Scope",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2576023683/Scope"
+        },
+        {
+          "text": "Scope - FAQ",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2576974115/Scope+%3A+FAQ"
+        }
+      ],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A2.1",
+      "section": "A2",
+      "subsection": null,
+      "text": "Is this assessment for your whole organisation or only a part of it?",
+      "guidance": "Your whole organisation includes all networks, user accounts and devices which access your organisation's data and services. \nPartial organisation would mean that some networks are excluded from scope, this must be done using a firewall or VLAN.",
+      "guidanceLinks": [
+        {
+          "text": "About Scope",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2667347998/About+Scope"
+        },
+        {
+          "text": "Subset Scoping Guidance",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2708766742/Subset+Scoping+Guidance"
+        }
+      ],
+      "answerType": "choice",
+      "options": [
+        {
+          "value": "whole",
+          "label": "Whole organisation"
+        },
+        {
+          "value": "partial",
+          "label": "Partial organisation"
+        }
+      ],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A2.2",
+      "section": "A2",
+      "subsection": null,
+      "text": "If you are certifying part of your organisation, please write a detailed description of the scope here.",
+      "guidance": "If you are certifying only part of the organisation, the scope description on the certificate will say ‘Partial Organisation, see certificate platform for details’.\nThe full scope description here will be available via the Blockmark system. Please add a full description of the scope of this certificate.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": {
+        "questionId": "A2.1",
+        "equals": "partial"
+      }
+    },
+    {
+      "id": "A2.2.1",
+      "section": "A2",
+      "subsection": null,
+      "text": "Please provide a description of any networks that have been excluded from the assessment by creating a sub-set.",
+      "guidance": "This information will not be made public.\nDefinition of sub-set:\nA sub-set is part of the organisation whose network is segregated\nfrom the rest of the organisation by a firewall or VLAN.\nA more detailed explanation is available in the following Cyber Essentials Knowledge Hub article.",
+      "guidanceLinks": [
+        {
+          "text": "Subset Scoping Guidance",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2708766742/Subset+Scoping+Guidance"
+        }
+      ],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": {
+        "questionId": "A2.1",
+        "equals": "partial"
+      }
+    },
+    {
+      "id": "A2.2.2",
+      "section": "A2",
+      "subsection": null,
+      "text": "Where one or more sub-sets have been created, please describe how this has been achieved.",
+      "guidance": "Sub-sets must be created using a firewall or VLAN - other methods such as security groups, microsegmentation or software-based methods are not compliant.\nFor example, ‘Test/Development network - segregated by firewall’ or ‘Finance department - VLAN’",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": {
+        "questionId": "A2.1",
+        "equals": "partial"
+      }
+    },
+    {
+      "id": "A2.3",
+      "section": "A2",
+      "subsection": null,
+      "text": "Are the networks included in the scope of this assessment being used at the company locations you provided earlier?",
+      "guidance": "This does not include the addresses of home/remote workers. \n\nPlease confirm whether all in-scope networks are being used at the company locations you listed in Question A1.5.1.\nIf the in-scope networks are being used at locations other than those listed in A1.5.1, please provide the number of additional sites where these networks are being used.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A2.3.1",
+      "section": "A2",
+      "subsection": null,
+      "text": "Do you have an internet connection for each site in your organisation?",
+      "guidance": "",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A2.3.2",
+      "section": "A2",
+      "subsection": null,
+      "text": "If no, please describe the way that your sites are connected.",
+      "guidance": "Please give details of the connection methods between your interconnected sites.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": {
+        "questionId": "A2.3.1",
+        "equals": "No"
+      }
+    },
+    {
+      "id": "A2.4",
+      "section": "A2",
+      "subsection": null,
+      "text": "Please provide a list of networks that will be in scope for this assessment.",
+      "guidance": "You should include details of each network used in your organisation, including its name, location and purpose (e.g. \"Main Network at Head Office for administrative use\"). \n\nInformation provided here will not be made public.\n\nDo not provide IP addresses or other technical information. \nDevelopment/testing and pen-testing networks must not be included.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A2.4.1",
+      "section": "A2",
+      "subsection": null,
+      "text": "How many staff are home or remote workers?",
+      "guidance": "Any employee that has been given permission to work remotely (for any period at the time of the assessment) needs to be classed as a home/remote worker for Cyber Essentials.\nFor further guidance see the Home and Remote Working section in the Requirements document.",
+      "guidanceLinks": [
+        {
+          "text": "Cyber Essentials: Requirements for IT Infrastructure v3.3",
+          "url": "https://www.ncsc.gov.uk/files/cyber-essentials-requirements-for-it-infrastructure-v3-3.pdf"
+        }
+      ],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A2.4.2",
+      "section": "A2",
+      "subsection": null,
+      "text": "How are home/remote workers connecting to your organisational data and services?",
+      "guidance": "For example, via home router, business-provided router or corporate VPN.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A2.5",
+      "section": "A2",
+      "subsection": null,
+      "text": "Please provide a list of network equipment that will be in scope for this assessment (including firewalls and routers).\nYou must include make, model and quantity of each device listed.",
+      "guidance": "You should include all equipment that controls the flow of data to and from the internet. This will be your routers and firewalls.\nYou do not need to include switches or wireless access points that do not contain a firewall or do not route internet traffic.\nIf you have home and/or remote workers, they will be relying on software firewalls, please provide details in the notes field.\nYou are not required to list any IP addresses, MAC addresses or serial numbers.  \n\nDetails of routers and firewalls in the home environment must not be included.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A2.5.1",
+      "section": "A2",
+      "subsection": null,
+      "text": "If you are certifying as partial organisation, please list the equipment used to create any sub-sets.",
+      "guidance": "Please list any routers, physical firewalls, or virtual firewalls (hosted on a hypervisor) that are being used to create sub-sets of your network. Note that software firewalls built into operating systems (e.g., Windows Firewall) cannot be used to define the boundary of the scope for this assessment.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": {
+        "questionId": "A2.1",
+        "equals": "partial"
+      }
+    },
+    {
+      "id": "A2.6",
+      "section": "A2",
+      "subsection": null,
+      "text": "Please list the quantities and operating systems for your laptops, desktops and virtual desktops within the scope of this assessment.\nPlease Note: You must include make and operating system versions for all devices. All user devices declared within the scope of the certification only require the make and operating system to be listed. We have removed the requirement for you to list the model of the device.\nOnly in-scope devices connecting to cloud services must be included in the assessment. Devices outside the declared scope are excluded, but user accounts accessing the cloud service must comply with Cyber Essentials controls, including mandatory MFA.\nA scope that does not include end user devices is not acceptable.",
+      "guidance": "You need to provide a summary of all laptops, computers, virtual desktops and their operating systems that are used for accessing organisational data or services and have access to the internet.\nFor example, “We have 25 DELL laptops running Windows 11 Professional version 23H2 and 10 MacBook laptops running MacOS Ventura\".\nPlease note, the edition and feature version of your Windows operating systems are required.\nThis applies to both your corporate and user owned devices (BYOD).\nYou do not need to provide serial numbers, MAC addresses or further technical information.\nExtended Security Update schemes\nFor any end-of-life operating system that has an extended security update program, you must maintain the required subscription.\nIf you are using Windows 10 beyond the 14th October 2025 you must be signed up to the Microsoft Extended Security Update program in order to remain compliant.",
+      "guidanceLinks": [
+        {
+          "text": "Guidance to BYOD",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2651652226/Guidance+to+BYOD"
+        },
+        {
+          "text": "Operating System Support",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2834563080/Operating+System+Support"
+        }
+      ],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A2.6.1",
+      "section": "A2",
+      "subsection": null,
+      "text": "Please list the quantity of thin clients within the scope of this assessment. Please include make and operating systems.",
+      "guidance": "Please provide a summary of all the thin clients in scope that are connecting to organisational data or services (definitions of which are in the ‘Cyber Essentials Requirements for IT Infrastructure’ document).\n\nThin clients are simplified computers with a minimum operating system, primarily designed for accessing virtual desktops. While thin clients can connect to the internet, some can be modified to function more like traditional PCs, which may introduce security risks. To meet Cyber Essentials requirements, thin clients must be supported and receive regular security updates.",
+      "guidanceLinks": [
+        {
+          "text": "Cyber Essentials: Requirements for IT Infrastructure v3.3",
+          "url": "https://www.ncsc.gov.uk/files/cyber-essentials-requirements-for-it-infrastructure-v3-3.pdf"
+        }
+      ],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A2.7",
+      "section": "A2",
+      "subsection": null,
+      "text": "Please list the quantity of servers, virtual servers, virtual server hosts (hypervisors) and Virtual Desktop Infrastructure (VDI) servers. You must include the operating system.",
+      "guidance": "Please list the quantity of all servers within the scope of this assessment.\nFor example:  2 x VMware ESXI 8.0 hosting 8 virtual Windows 2019 servers; 1 x MS Server 2019; 1 x Red Hat Enterprise Linux 8.9",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A2.8",
+      "section": "A2",
+      "subsection": null,
+      "text": "Please list the quantities of tablets and mobile devices within the scope of this assessment.",
+      "guidance": "Please Note: You must include make and operating system versions for all devices. All user devices within the scope of the certification only require the make and operating system to be listed. \nDevices that are connecting to cloud services must be included. \nA scope that does not include end user devices is not acceptable.",
+      "guidanceLinks": [
+        {
+          "text": "Guidance to BYOD",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2651652226/Guidance+to+BYOD"
+        },
+        {
+          "text": "Operating System Support",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2834563080/Operating+System+Support"
+        }
+      ],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A2.9",
+      "section": "A2",
+      "subsection": null,
+      "text": "Please list all the cloud services that are in use by your organisation and provided by a third party.\nPlease note that cloud services cannot be excluded from the scope of Cyber Essentials.",
+      "guidance": "You need to include details of all your cloud services. This includes all types of services - Infrastructure as a Service (IaaS), Platform as a Service (PaaS) and Software as a Service (SaaS).\nDefinitions of the different types of cloud services are provided in the ‘Cyber Essentials Requirements for IT Infrastructure’ document.\nSocial media accounts (e.g. Facebook, LinkedIn, X) are also considered to be cloud services.\n\nDefinition of Cloud Service - A cloud service is an on-demand, scalable service, hosted on shared infrastructure, and accessible via the internet. For the purposes of Cyber Essentials, a cloud service will be accessed via an account (which may be credentials issued by your organisation or an email address used for business purposes) and will store or process data for your organisation.",
+      "guidanceLinks": [
+        {
+          "text": "Cyber Essentials: Requirements for IT Infrastructure v3.3",
+          "url": "https://www.ncsc.gov.uk/files/cyber-essentials-requirements-for-it-infrastructure-v3-3.pdf"
+        }
+      ],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A2.10",
+      "section": "A2",
+      "subsection": null,
+      "text": "Please provide the name and role of the person who is responsible for managing your IT systems in the scope of this assessment.",
+      "guidance": "This person must be a member of your organisation and cannot be a person employed by your outsourced IT provider.\n\nAll organisations with a head office domiciled in the UK and a turnover of less than £20 million can opt into automatic cyber insurance if they achieve Cyber Essentials certification. The insurance is free of charge but you can opt out of the insurance element if you choose. This will not change the price of the assessment package. If you want the insurance then we do need to ask some additional questions and these answers will be forwarded to the broker.  The answers to these questions will not affect the result of your Cyber Essentials assessment. It is important that the insurance information provided is as accurate as possible and that the assessment declaration is signed by Board level or equivalent, to avoid any delays to the insurance policy being issued.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A3.1",
+      "section": "A3",
+      "subsection": null,
+      "text": "Is your head office domiciled in the UK or Crown Dependencies and is your gross annual turnover less than £20m?",
+      "guidance": "This question relates to the eligibility of your organisation for the included cyber insurance",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A3.2",
+      "section": "A3",
+      "subsection": null,
+      "text": "If you have answered \"yes\" to the last question, then your organisation is eligible for the included cyber insurance if you gain certification. Would you like to opt in for the included cyber insurance?",
+      "guidance": "There is no additional cost for the insurance. You can see more about it at",
+      "guidanceLinks": [
+        {
+          "text": "Cyber Liability Insurance",
+          "url": "https://iasme.co.uk/cyber-essentials/cyber-liability-insurance/"
+        }
+      ],
+      "answerType": "optinout",
+      "options": [
+        {
+          "value": "opt_in",
+          "label": "Opt in"
+        },
+        {
+          "value": "opt_out",
+          "label": "Opt out"
+        }
+      ],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": {
+        "questionId": "A3.1",
+        "equals": "Yes"
+      }
+    },
+    {
+      "id": "A3.3",
+      "section": "A3",
+      "subsection": null,
+      "text": "What is the organisation email contact for the insurance documents? You only need to answer this question if you are taking the insurance.",
+      "guidance": "The answer to this question will be passed to the Insurance Broker in association with the Cyber Insurance you will receive at certification and they will use this to contact you with your insurance documents and renewal information.\n\nFirewall is the generic name for a piece of software or a hardware device which provides technical protection between your network devices and the Internet, referred to in the question set as boundary firewalls. Your organisation will have physical, virtual or software firewalls at your internet boundaries. Software firewalls are included within all major operating systems for laptops, desktops and servers and need to be configured correctly to provide effective protection. \n\nQuestions in this section apply to: boundary firewalls, desktop computers, laptops, routers, servers, IaaS, PaaS, and SaaS.\n\nFurther guidance can be found here :",
+      "guidanceLinks": [
+        {
+          "text": "Knowledge Hub - Firewalls",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2576351257/Control+%3A+Firewalls"
+        },
+        {
+          "text": "Firewalls - FAQ",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2644607074/Firewalls+%3A+FAQ"
+        }
+      ],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": {
+        "questionId": "A3.2",
+        "equals": "opt_in"
+      }
+    },
+    {
+      "id": "A4.1",
+      "section": "A4",
+      "subsection": null,
+      "text": "Do you have firewalls at the boundaries between your organisation’s internal networks, laptops, desktops, servers and the internet?",
+      "guidance": "You must have firewalls in place between your office network and the internet.\n\nCE Requirement: You must protect every device in scope with a correctly configured firewall (or network device with firewall functionality).\n\nFurther guidance:",
+      "guidanceLinks": [
+        {
+          "text": "Firewalls",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2660565407/Firewalls"
+        }
+      ],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: You must protect every device in scope with a correctly configured firewall (or network device with firewall functionality).",
+      "compliantAnswer": "Yes",
+      "dependsOn": null
+    },
+    {
+      "id": "A4.1.1",
+      "section": "A4",
+      "subsection": null,
+      "text": "Do you have software firewalls enabled on all of your computers, laptops and servers?",
+      "guidance": "Your software firewall needs to be configured and enabled at all times, even when sitting behind a physical/virtual boundary firewall in an office location.\n \nGuidance on how to check your software firewall can be found here:\n\nCE Requirement: You must protect every device in scope with a correctly configured firewall (or network device with firewall functionality).\n\nCE Requirement: Make sure you use a software firewall on devices which are used on untrusted networks, such as public wifi hotspots.\n\nIf your organisation doesn't control the network to which a device connects, you must configure a software firewall on the device.",
+      "guidanceLinks": [
+        {
+          "text": "About Firewalls",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2660467054/About+Firewalls"
+        }
+      ],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": "Yes",
+      "dependsOn": null
+    },
+    {
+      "id": "A4.1.2",
+      "section": "A4",
+      "subsection": null,
+      "text": "If you answered no to question A4.1.1, is this because software firewalls are not installed by default as part of the operating system you are using? Please list the operating systems.",
+      "guidance": "Only very few operating systems do not have software firewalls available. Examples might include embedded Linux systems or bespoke servers. For the avoidance of doubt, all versions of Windows, macOS and all common Linux distributions such as Ubuntu do have software firewalls available.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": {
+        "questionId": "A4.1.1",
+        "equals": "No"
+      }
+    },
+    {
+      "id": "A4.2",
+      "section": "A4",
+      "subsection": null,
+      "text": "When you first receive an internet router or hardware firewall device, it may have had a default password on it. Have you changed all the default passwords on your boundary firewall devices?",
+      "guidance": "The default administrator password must be changed on all routers and firewalls, including those that come with a unique password pre-configured (e.g. BT Business Hub, Draytek Vigor 2865ac).\n\nWhen relying on software firewalls included as part of the operating system of your end user devices, the password to access the device will need to be changed. \n\nCE Requirement: Change default administrative passwords to a strong and unique password – or disable remote administrative access entirely.\n\nFurther guidance:",
+      "guidanceLinks": [
+        {
+          "text": "About Routers",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2660794668/About+Routers"
+        }
+      ],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: Change default administrative passwords to a strong and unique password – or disable remote administrative access entirely.",
+      "compliantAnswer": "Yes",
+      "dependsOn": null
+    },
+    {
+      "id": "A4.2.1",
+      "section": "A4",
+      "subsection": null,
+      "text": "Please describe the process for changing your firewall password.\nHome routers not supplied by your organisation are not included in this requirement.",
+      "guidance": "You need to understand how the password on your firewall(s) is changed.\n\nPlease provide a brief description of how this is achieved.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A4.3",
+      "section": "A4",
+      "subsection": null,
+      "text": "How is your firewall password configured?\nPlease select the option being used:\nA. Multi-factor authentication, with a minimum password length 8 characters and no maximum length\nB. Automatic blocking of common passwords, with a minimum password length 8 characters and no maximum length\nC. A password minimum length of 12 characters and no maximum length\nD. Passwordless system is being used as an alternative to user name and password, please describe\nE. None of the above, please describe",
+      "guidance": "Acceptable technical controls that you can use to manage the quality of your passwords are outlined in the section about password-based authentication in the ‘Cyber Essentials Requirements for IT Infrastructure’ document.\n\nCE Requirement: Prevent access to the administrative interface (used to manage firewall configuration) from the internet, unless there is a clear and documented business need, and the interface is protected by one of the following controls:\n\n• multi-factor authentication \n• an IP allow list that limits access to a small range of trusted addresses combined with a properly managed password authentication approach\n\nFurther guidance :",
+      "guidanceLinks": [
+        {
+          "text": "Cyber Essentials Requirements for IT Infrastructure v3.3",
+          "url": "https://www.ncsc.gov.uk/files/cyber-essentials-requirements-for-it-infrastructure-v3-3.pdf"
+        },
+        {
+          "text": "Bulletproof your passwords",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2652045481/Bulletproof+your+passwords+-+additional+authentication+methods"
+        }
+      ],
+      "answerType": "lettered",
+      "options": [
+        {
+          "value": "A",
+          "label": "Multi-factor authentication, with a minimum password length 8 characters and no maximum length"
+        },
+        {
+          "value": "B",
+          "label": "Automatic blocking of common passwords, with a minimum password length 8 characters and no maximum length"
+        },
+        {
+          "value": "C",
+          "label": "A password minimum length of 12 characters and no maximum length"
+        },
+        {
+          "value": "D",
+          "label": "Passwordless system is being used as an alternative to user name and password, please describe"
+        },
+        {
+          "value": "E",
+          "label": "None of the above, please describe"
+        }
+      ],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A4.4",
+      "section": "A4",
+      "subsection": null,
+      "text": "Do you change your firewall password when you know or suspect it has been compromised?",
+      "guidance": "Passwords may be compromised if there has been a virus on your system or if the manufacturer notifies you of a security weakness in their product. You should be aware of this and know how to change the password if this occurs.\n\nWhen relying on software firewalls included as part of the operating system of your end user devices, the password to access the device will need to be changed. \n\nCE Requirement: You should make sure there is an established process in place to change passwords promptly if you know or suspect a password or account has been compromised. \n\nFurther guidance:",
+      "guidanceLinks": [
+        {
+          "text": "Compromised accounts",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2851668057/What+do+we+mean+by+a+compromised+account+and+how+would+you+know+if+this+has+happened"
+        }
+      ],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: You should make sure there is an established process in place to change passwords promptly if you know or suspect a password or account has been compromised.",
+      "compliantAnswer": "Yes",
+      "dependsOn": null
+    },
+    {
+      "id": "A4.5",
+      "section": "A4",
+      "subsection": null,
+      "text": "Do you have a process to manage your firewall?",
+      "guidance": "At times your firewall may be configured to allow a system on the inside to become accessible from the internet (for example: a VPN server, a mail server, an FTP server, or a service that is accessed by your customers). This is sometimes\nreferred to as \"opening a port\". You need to show a business case for doing this because it can present security risks.",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": "Yes",
+      "dependsOn": null
+    },
+    {
+      "id": "A4.6",
+      "section": "A4",
+      "subsection": null,
+      "text": "Have you reviewed your firewall rules in the last 12 months?\nPlease describe your review process.",
+      "guidance": "If you no longer need a service to be enabled on your firewall, you must remove it to reduce the risk of compromise. You should have a process that you follow to do this (i.e. when are services reviewed, who decides to remove the services, who checks that it has been done?).\n \nCE Requirement: Remove or disable inbound firewall rules quickly when they are no longer needed.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: Remove or disable inbound firewall rules quickly when they are no longer needed.",
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A4.7",
+      "section": "A4",
+      "subsection": null,
+      "text": "Is your firewall configured to allow unauthenticated inbound connections?",
+      "guidance": "By default, most firewalls block all services inside the network from being accessed from the internet, but you need to check your firewall settings.\n\nCE Requirement: Block unauthenticated inbound connections by default.",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: Block unauthenticated inbound connections by default.",
+      "compliantAnswer": "No",
+      "dependsOn": null
+    },
+    {
+      "id": "A4.8",
+      "section": "A4",
+      "subsection": null,
+      "text": "Please describe how you approve and document your allowed inbound connections.",
+      "guidance": "The business case should be documented and recorded. A business case must be signed off at board level and associated risks reviewed regularly. \n\nAt times your firewall may be configured to allow a system on the inside to become accessible from the internet (for example: a VPN server, a mail server, an FTP server, or a service that is accessed by your customers). \n\nThis is sometimes referred to as \"opening a port\". You need to show a business case for doing this because it can present security risks. \n\nCE Requirement: Ensure inbound firewall rules are approved and documented by an authorised person, and include the business need in the documentation.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: Ensure inbound firewall rules are approved and documented by an authorised person, and include the business need in the documentation.",
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A4.9",
+      "section": "A4",
+      "subsection": null,
+      "text": "Are your boundary firewalls configured to allow access to their configuration settings over the internet?",
+      "guidance": "Sometimes organisations configure their firewall to allow other people (such as an IT support company) to change the settings via the internet.\n\nIf you have not set up your firewalls to be accessible to people outside your organisations or your device configuration settings are only accessible via a VPN connection, then answer \"no\" to this question.\n\nCE Requirement: Prevent access to the administrative interface (used to manage firewall configuration) from the internet, unless there is a clear and documented business need, and the interface is protected by one of the following controls:\n\n• multi-factor authentication \n• an IP allow list that limits access to a small range of trusted addresses combined with a properly managed password authentication approach",
+      "guidanceLinks": [
+        {
+          "text": "Guidance on VPNs",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2651324512/What+is+a+VPN"
+        }
+      ],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: Prevent access to the administrative interface (used to manage firewall configuration) from the internet, unless there is a clear and documented business need, and the interface is protected by one of the following controls:",
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A4.10",
+      "section": "A4",
+      "subsection": null,
+      "text": "If you answered yes in question A4.9, is there a documented business requirement for this access?",
+      "guidance": "When you have made a decision to provide external access to your routers and firewalls, this decision must be documented (for example, written down).\n\nCE Requirement: Ensure inbound firewall rules are approved and documented by an authorised person, and include the business need in the documentation.",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: Ensure inbound firewall rules are approved and documented by an authorised person, and include the business need in the documentation.",
+      "compliantAnswer": null,
+      "dependsOn": {
+        "questionId": "A4.9",
+        "equals": "Yes"
+      }
+    },
+    {
+      "id": "A4.11",
+      "section": "A4",
+      "subsection": null,
+      "text": "If you answered yes in question A4.9, is the access to your firewall settings protected by either multi-factor authentication or by only allowing trusted IP addresses combined with managed authentication to access the settings?",
+      "guidance": "If you allow direct access to configuration settings via your router or firewall's external interface, this must be protected by one of the two options. \n\nPlease explain which option is used.\n\nCE Requirement: Prevent access to the administrative interface (used to manage firewall configuration) from the internet, unless there is a clear and documented business need, and the interface is protected by one of the following controls:\n\n• multi-factor authentication \n• an IP allow list that limits access to a small range of trusted addresses combined with a properly managed password authentication approach\n\nComputers and cloud services are often not secure upon default installation or setup. An ‘out-of-the-box’ set-up can often include an administrative account with a standard, publicly known default password, one or more unnecessary user accounts enabled (sometimes with special access privileges ) and pre-installed but unnecessary applications or services. All of these present security risks.\n\nQuestions in this section apply to: servers, desktop computers, laptops, thin clients, tablets, mobile phones, IaaS, PaaS and SaaS. \n\nFurther guidance:",
+      "guidanceLinks": [
+        {
+          "text": "Knowledge Hub - Secure Configuration",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2576253017/Control+%3A+Secure+Configuration"
+        },
+        {
+          "text": "Secure configuration - FAQ",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2576842897/Secure+Configuration+-+FAQ"
+        }
+      ],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: Prevent access to the administrative interface (used to manage firewall configuration) from the internet, unless there is a clear and documented business need, and the interface is protected by one of the following controls:",
+      "compliantAnswer": null,
+      "dependsOn": {
+        "questionId": "A4.9",
+        "equals": "Yes"
+      }
+    },
+    {
+      "id": "A5.1",
+      "section": "A5",
+      "subsection": null,
+      "text": "Have you removed or disabled software and services that you do not use on your laptops, desktop computers, thin clients, servers, tablets, mobile phones and cloud services?\nDescribe how you achieve this.",
+      "guidance": "You must remove or disable applications, system utilities and network services that are not needed in day-to-day use.  You need to check your cloud services and disable any services that are not required for day-to-day use. \n\nTo view installed applications:\n\n• Windows: Right-click on Start > Apps and Features\n• macOS: Open Finder > Applications\n• Linux: Open your software package manager (apt, rpm, yum)\n\nCE Requirement: You must regularly remove or disable unnecessary software (including applications, system utilities and network services).\n\nFurther guidance:",
+      "guidanceLinks": [
+        {
+          "text": "Removing unnecessary software",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2660401728/Removing+unnecessary+software"
+        }
+      ],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: You must regularly remove or disable unnecessary software (including applications, system utilities and network services).",
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A5.2",
+      "section": "A5",
+      "subsection": null,
+      "text": "Have you ensured that all your laptops, computers, servers, tablets, mobile devices and cloud services only contain necessary user accounts that are regularly used in the course of your business?",
+      "guidance": "You must remove or disable any user accounts that are not needed in day-to-day use on all devices and cloud services.\n\nTo view user accounts:\n\n• Windows: Right-click on Start > Computer Management > Users\n• macOS: System Settings > Users and Groups\n• Linux:  \"cat/etc/passwd\"\n\nCE Requirement: You must regularly remove and disable unnecessary user accounts (such as guest accounts and administrative accounts that won’t be used).",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: You must regularly remove and disable unnecessary user accounts (such as guest accounts and administrative accounts that won’t be used).",
+      "compliantAnswer": "Yes",
+      "dependsOn": null
+    },
+    {
+      "id": "A5.3",
+      "section": "A5",
+      "subsection": null,
+      "text": "Have you changed the default password for all user and administrator accounts on all your desktop computers, laptops, thin clients, servers, tablets and mobile phones that follow the Password-based authentication requirements of Cyber Essentials?",
+      "guidance": "A password that is difficult to guess will be unique and not be made up of common or predictable words such as \"password\" or \"admin\", or include predictable number sequences such as \"12345\".\n\nCE Requirement: You must regularly change any default or guessable account passwords.\n\nUse technical controls to manage the quality of passwords. This will include one of the following:\n\n• using multi-factor authentication \n• a minimum password length of at least 12 characters, with no maximum length restrictions\n• a minimum password length of at least 8 characters, with no maximum length restrictions and use automatic blocking of common passwords using a deny list",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: You must regularly change any default or guessable account passwords.",
+      "compliantAnswer": "Yes",
+      "dependsOn": null
+    },
+    {
+      "id": "A5.4",
+      "section": "A5",
+      "subsection": null,
+      "text": "Do you run or host external services that provide access to data (that shouldn't be made public) to users across the internet?",
+      "guidance": "Your business might run software that allows staff or customers to access information across the internet to an external service hosted on the internal network, cloud data centre or IaaS cloud service. This could be a VPN server, a mail server, or an internally hosted internet application such as a SaaS or PaaS cloud service that you provide to your customers as a product. In all cases, these applications provide information that is confidential to your business and your customers and that you would not want to be publicly accessible.\n\nCE Requirement: Ensure users are authenticated before allowing them access to organisational data or services.",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: Ensure users are authenticated before allowing them access to organisational data or services.",
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A5.5",
+      "section": "A5",
+      "subsection": null,
+      "text": "If yes to question A5.4, which authentication option do you use?\nA. Multi-factor authentication, with a minimum password length of 8 characters and no maximum length\nB. Automatic blocking of common passwords, with a minimum password length of 8 characters and no maximum length\nC. A minimum password length of 12 characters and no maximum length\nD. Passwordless, please describe\nE. None of the above, please describe",
+      "guidance": "Acceptable technical controls that you can use to manage the quality of your passwords are outlined in the section about ‘Password-based authentication’ in the ‘Cyber Essentials Requirements for IT Infrastructure’ document.\n\nCE Requirement: Use technical controls to manage the quality of passwords. This will include one of the following:\n• using multi-factor authentication \n• a minimum password length of at least 12 characters, with no maximum length restrictions\n• a minimum password length of at least 8 characters, with no maximum length restrictions and use automatic blocking of common passwords using a deny list",
+      "guidanceLinks": [
+        {
+          "text": "Cyber Essentials Requirements for IT Infrastructure v3.3",
+          "url": "https://www.ncsc.gov.uk/files/cyber-essentials-requirements-for-it-infrastructure-v3-3.pdf"
+        }
+      ],
+      "answerType": "lettered",
+      "options": [
+        {
+          "value": "A",
+          "label": "Multi-factor authentication, with a minimum password length of 8 characters and no maximum length"
+        },
+        {
+          "value": "B",
+          "label": "Automatic blocking of common passwords, with a minimum password length of 8 characters and no maximum length"
+        },
+        {
+          "value": "C",
+          "label": "A minimum password length of 12 characters and no maximum length"
+        },
+        {
+          "value": "D",
+          "label": "Passwordless, please describe"
+        },
+        {
+          "value": "E",
+          "label": "None of the above, please describe"
+        }
+      ],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": {
+        "questionId": "A5.4",
+        "equals": "Yes"
+      }
+    },
+    {
+      "id": "A5.6",
+      "section": "A5",
+      "subsection": null,
+      "text": "Describe the process in place for changing passwords on your external services when you believe they have been compromised.",
+      "guidance": "Passwords may be compromised if there has been a virus on your system or if the manufacturer notifies you of a security weakness in their product. You should know how to change the password if this occurs.\n\nCE Requirement: You should also make sure there is an established process in place to change passwords promptly if you know or suspect a password or account has been compromised.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: You should also make sure there is an established process in place to change passwords promptly if you know or suspect a password or account has been compromised.",
+      "compliantAnswer": null,
+      "dependsOn": {
+        "questionId": "A5.4",
+        "equals": "Yes"
+      }
+    },
+    {
+      "id": "A5.7",
+      "section": "A5",
+      "subsection": null,
+      "text": "When not using multi-factor authentication, which option are you using to protect your external service from brute force attacks?\nA. Throttling the rate of attempts\nB. Locking accounts after 10 unsuccessful attempts\nC. None of the above, please describe",
+      "guidance": "The external service that you provide must be set to slow down or stop attempts to log in if the wrong username and password have been tried a number of times. This reduces the opportunity for cyber criminals to keep trying different passwords (brute-forcing) in the hope of gaining access.\n\nCE Requirement: You must protect your chosen authentication method (which can be biometric authentication, password or PIN) against brute-force attacks. When it's possible to configure, you should apply one of the following:\n\n• ‘throttling' the rate of attempts, so that the length of time the user must wait between attempts increases with each unsuccessful attempt - you shouldn’t allow more than 10 guesses in 5 minutes\n• locking devices after more than 10 unsuccessful attempts\nWhen the vendor doesn't allow you to configure the above, use the vendor’s default setting.",
+      "guidanceLinks": [],
+      "answerType": "lettered",
+      "options": [
+        {
+          "value": "A",
+          "label": "Throttling the rate of attempts"
+        },
+        {
+          "value": "B",
+          "label": "Locking accounts after 10 unsuccessful attempts"
+        },
+        {
+          "value": "C",
+          "label": "None of the above, please describe"
+        }
+      ],
+      "multiSelect": false,
+      "requirement": "CE Requirement: You must protect your chosen authentication method (which can be biometric authentication, password or PIN) against brute-force attacks. When it's possible to configure, you should apply one of the following:",
+      "compliantAnswer": null,
+      "dependsOn": {
+        "questionId": "A5.4",
+        "equals": "Yes"
+      }
+    },
+    {
+      "id": "A5.8",
+      "section": "A5",
+      "subsection": null,
+      "text": "Have you disabled any feature which allows automatic file execution of downloaded or imported files without user authorisation?",
+      "guidance": "This is a setting on your device which automatically runs software on external media or downloaded from the internet.\n\nIt is acceptable to choose the option where a user is prompted to make a choice about what action will occur each time they insert a memory stick. If you have chosen this option, you can answer yes to this question.\n\nCE Requirement: Disable any auto-run feature which allows file execution without user authorisation (such as when they are downloaded).",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: Disable any auto-run feature which allows file execution without user authorisation (such as when they are downloaded).",
+      "compliantAnswer": "Yes",
+      "dependsOn": null
+    },
+    {
+      "id": "A5.9",
+      "section": "A5",
+      "subsection": "Device Unlocking Method",
+      "text": "When a device requires a user to have the device in hand, do you set a locking mechanism on your devices to access the software and services installed?",
+      "guidance": "Device locking mechanisms such as biometric, password or PIN, need to be enabled to prevent unauthorised access to devices accessing organisational data or services.\n\nCE Requirement: Ensure appropriate device locking controls for users that are physically present.",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: Ensure appropriate device locking controls for users that are physically present.",
+      "compliantAnswer": "Yes",
+      "dependsOn": null
+    },
+    {
+      "id": "A5.10",
+      "section": "A5",
+      "subsection": "Device Unlocking Method",
+      "text": "Which method do you use to unlock the devices?",
+      "guidance": "Please refer to Device Unlocking Credentials paragraph found under Secure Configuration in the Cyber Essentials Requirements for IT Infrastructure document for further information.\n\nThe use of a PIN with a length of at least six characters can only be used where the credentials are just to unlock a device and does not provide access to organisational data and services without further authentication.\n\nCE Requirement: If a device requires a user’s physical presence to access a device’s services (such as logging on to a laptop or unlocking a mobile phone), a credential such as a biometric, password or PIN must be in place before a user can gain access to the services.\n\nYou must protect your chosen authentication method against brute-force attacks.\n\nWhen it's possible to configure, you should apply one of the following:\n\n• ‘throttling' the rate of attempts, so that the length of time the user must wait between attempts increases with each unsuccessful attempt - you shouldn’t allow more than 10 guesses in 5 minutes\n• locking devices after more than 10 unsuccessful attempts\n\nWhen the vendor doesn't allow you to configure the above, use the vendor’s default setting.\n\nTo protect your organisation, you should ensure that all your software is always up to date with the latest security updates. If any of your in-scope devices are using an operating system which is no longer supported (for example, Microsoft Windows XP/Vista/2003/Windows 7/Server 2008, MacOS High Sierra, Ubuntu 17.10), and you are not being provided with regular vulnerability fixes from the vendor, then you will not be awarded certification. Mobile phones and tablets are in-scope and must also use an operating system that is still supported by the manufacturer.\n\nQuestions in this section apply to: servers, desktop computers, laptops, tablets, thin clients, mobile phones, routers, firewalls, IaaS and PaaS cloud services.\n\nFurther guidance:",
+      "guidanceLinks": [
+        {
+          "text": "Cyber Essentials Requirements for IT Infrastructure v3.3",
+          "url": "https://www.ncsc.gov.uk/files/cyber-essentials-requirements-for-it-infrastructure-v3-3.pdf"
+        },
+        {
+          "text": "Knowledge Hub - Security Update Management",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2576252995/Control+%3A+Security+Update+Management"
+        },
+        {
+          "text": "Security Update Management - FAQ",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2576842966/Security+Update+Management+%3A+FAQ"
+        }
+      ],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": {
+        "questionId": "A5.9",
+        "equals": "Yes"
+      }
+    },
+    {
+      "id": "A6.1",
+      "section": "A6",
+      "subsection": null,
+      "text": "Are all operating systems on your devices supported by a vendor that produces regular security updates and vulnerability fixes?\nIf you have included firewall or router devices in your scope, the firmware of these devices is considered to be an operating system and needs to meet this requirement.",
+      "guidance": "Older operating systems that are out of regular support could be any of the following examples:  Windows XP/Vista/Server 2003/Windows 10, macOS Ventura, iOS 15, Android 12 and Ubuntu Linux 17.10.  This is not an exhaustive list and you should always check with the vendor to confirm if an operating system is still supported \nIt is important you keep track of your operating systems and understand when they have gone end of life (EOL). Most major vendors will have published EOL dates for their operating systems and firmware.\nCE Requirement: You must make sure that all software in scope is kept up to date. All software on in-scope devices must be licensed and supported.\nVulnerability fixes include patches, updates, registry fixes, configuration changes, scripts or any other mechanism approved by the vendor to fix a known vulnerability.\nExtended Security Update schemes\nFor any end-of-life operating system that has an extended security update program, you must maintain the required subscription.\nIf you are using Windows 10 beyond the 14th October 2025 you must be signed up to the Microsoft Extended Security Update program in order to remain compliant.\nFurther guidance:",
+      "guidanceLinks": [
+        {
+          "text": "Operating System Support",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2834563080/Operating+System+Support"
+        },
+        {
+          "text": "Navigating the pitfalls of legacy software",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2647523445/Navigating+the+pitfalls+of+legacy+software"
+        }
+      ],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: You must make sure that all software in scope is kept up to date. All software on in-scope devices must be licensed and supported. Vulnerability fixes include patches, updates, registry fixes, configuration changes, scripts or any other mechanism approved by the vendor to fix a known vulnerability. Extended Security Update schemes For any end-of-life operating system that has an extended security update program, you must maintain the required subscription. If you are using Windows 10 beyond the 14th October 2025 you must be signed up to the Microsoft Extended Security Update program in order to remain compliant.",
+      "compliantAnswer": "Yes",
+      "dependsOn": null
+    },
+    {
+      "id": "A6.2",
+      "section": "A6",
+      "subsection": null,
+      "text": "Is all the software on your devices supported by a supplier that produces regular vulnerability fixes for any security problems?",
+      "guidance": "All software used by your organisation must be supported by a supplier who provides regular security updates and vulnerability fixes. Unsupported software must be removed from your devices. This includes frameworks and extensions.\nCE Requirement: You must make sure that all software in scope is kept up to date. All software on in-scope devices must be licensed and supported.",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: You must make sure that all software in scope is kept up to date. All software on in-scope devices must be licensed and supported.",
+      "compliantAnswer": "Yes",
+      "dependsOn": null
+    },
+    {
+      "id": "A6.2.1",
+      "section": "A6",
+      "subsection": null,
+      "text": "Please list your internet browser(s).\nThe version is required.",
+      "guidance": "Please list all internet browsers installed on your devices, so that the Assessor can understand your setup and verify that they are in support.\n\nFor example: Chrome Version 124, Safari Version 15.\n\nCE Requirement: You must make sure that all software in scope is kept up to date. All software on in-scope devices must be licensed and supported.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: You must make sure that all software in scope is kept up to date. All software on in-scope devices must be licensed and supported.",
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A6.2.2",
+      "section": "A6",
+      "subsection": null,
+      "text": "Please list your malware protection software\nThe version is required.",
+      "guidance": "Please list all malware protection and versions you use so that the Assessor can understand your setup and verify that they are in support.\n\nFor example: Sophos Endpoint Protection V10, Microsoft Defender, Bitdefender Internet Security 2023.\n\nCE Requirement: You must make sure that all software in scope is kept up to date. All software on in-scope devices must be licensed and supported.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: You must make sure that all software in scope is kept up to date. All software on in-scope devices must be licensed and supported.",
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A6.2.3",
+      "section": "A6",
+      "subsection": null,
+      "text": "Please list your email applications installed on end user devices and servers.\nThe version is required.",
+      "guidance": "Please list all email applications and versions you use so that the Assessor can understand your setup and verify that they are in support. \n\nFor example: MS Exchange 2016, Outlook 2019.\n\nCE Requirement: You must make sure that all software in scope is kept up to date. All software on in-scope devices must be licensed and supported.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: You must make sure that all software in scope is kept up to date. All software on in-scope devices must be licensed and supported.",
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A6.2.4",
+      "section": "A6",
+      "subsection": null,
+      "text": "Please list all office applications that are used to create organisational data.\nThe version is required.",
+      "guidance": "Please list all office applications and versions you use so that the Assessor can understand your setup and verify that they are in support.\n\nFor example: MS 365, Libre Office, Google Workspace, Office 2016.\n\nCE Requirement: You must make sure that all software in scope is kept up to date. All software on in-scope devices must be licensed and supported.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: You must make sure that all software in scope is kept up to date. All software on in-scope devices must be licensed and supported.",
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A6.3",
+      "section": "A6",
+      "subsection": null,
+      "text": "Are any of the in-scope software or cloud services unlicensed or unsupported?",
+      "guidance": "All software must be licensed. It is acceptable to use free and open-source software as long as you comply with any licensing requirements.\n\nPlease be aware that for some operating systems, firmware and applications, if annual licensing is not purchased, they will not be receiving regular security updates.\n\nCE Requirement: All software on in-scope devices must be licensed and supported.",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: All software on in-scope devices must be licensed and supported.",
+      "compliantAnswer": "No",
+      "dependsOn": null
+    },
+    {
+      "id": "A6.3.1",
+      "section": "A6",
+      "subsection": null,
+      "text": "If yes to A6.3, please list the unsupported or unlicensed software or cloud services.",
+      "guidance": "",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": {
+        "questionId": "A6.3",
+        "equals": "Yes"
+      }
+    },
+    {
+      "id": "A6.4",
+      "section": "A6",
+      "subsection": null,
+      "text": "Are all high-risk or critical security updates and vulnerability fixes for operating systems and router and firewall firmware installed within 14 days of release?",
+      "guidance": "You must install all high and critical security updates and vulnerability fixes within 14 days in all circumstances. If you cannot achieve this requirement at all times, you will not achieve compliance to this question. \nPlease note that this will be an automatic fail if the answer is no.\nYou are not required to install feature updates or optional updates in order to meet this requirement.\nThis requirement includes the firmware on your firewalls and routers.\nCE Requirement: All software on in-scope devices must be updated, including vulnerability fixes, within 14 days of release, where:\nThe update fixes vulnerabilities described by the vendor as ‘critical’ or ‘high-risk’                               \nThe update addresses vulnerabilities with a CVSSv3 base score of 7 or above\nThere are no details of the level of vulnerabilities the update fixes provided by the vendor\nPlease note: For optimum security we strongly recommend (but it’s not mandatory) that all released updates are applied within 14 days of release.\nIt's important that updates are applied as soon as possible. 14 days is considered a reasonable period to be able to implement this requirement. Any longer would constitute a serious security risk while a shorter period may not be practical.",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: All software on in-scope devices must be updated, including vulnerability fixes, within 14 days of release, where: The update fixes vulnerabilities described by the vendor as ‘critical’ or ‘high-risk’ The update addresses vulnerabilities with a CVSSv3 base score of 7 or above There are no details of the level of vulnerabilities the update fixes provided by the vendor Please note: For optimum security we strongly recommend (but it’s not mandatory) that all released updates are applied within 14 days of release. It's important that updates are applied as soon as possible. 14 days is considered a reasonable period to be able to implement this requirement. Any longer would constitute a serious security risk while a shorter period may not be practical.",
+      "compliantAnswer": "Yes",
+      "dependsOn": null,
+      "automaticFail": true
+    },
+    {
+      "id": "A6.4.1",
+      "section": "A6",
+      "subsection": null,
+      "text": "Are all updates applied for operating systems by enabling auto updates?",
+      "guidance": "Most devices have the option to enable auto updates. This must be enabled on any device where possible. \n\nCE Requirement: All software on in-scope devices must have automatic updates enabled where possible.",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: All software on in-scope devices must have automatic updates enabled where possible.",
+      "compliantAnswer": "Yes",
+      "dependsOn": null
+    },
+    {
+      "id": "A6.4.2",
+      "section": "A6",
+      "subsection": null,
+      "text": "Where auto updates are not being used, how do you ensure all high-risk or critical security updates and vulnerability fixes of all operating systems and firmware on firewalls and routers are applied within 14 days of release?",
+      "guidance": "It is not always possible to apply auto updates, this is often the case when you have critical systems or servers and you need to be in control of the updating process.\n\nPlease describe how any updates are applied when auto updates are not configured.\n\nIf you only use auto updates, please confirm this in the notes field for this question.\n\nCE Requirement: All software on in-scope devices must be updated, including vulnerability fixes, within 14 days of release, where:\n\n• The update fixes vulnerabilities described by the vendor as ‘critical’ or ‘high-risk’                               \n• The update addresses vulnerabilities with a CVSSv3 base score of 7 or above\n• There are no details of the level of vulnerabilities the update fixes provided by the vendor",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: All software on in-scope devices must be updated, including vulnerability fixes, within 14 days of release, where:",
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A6.5",
+      "section": "A6",
+      "subsection": null,
+      "text": "Are all high-risk or critical security updates and vulnerability fixes for software (including any associated files and extensions) installed within 14 days of release?",
+      "guidance": "You must install any such updates and vulnerability fixes within 14 days in all circumstances.\nIf you cannot achieve this requirement at all times, you will not achieve compliance to this question.\nPlease note that this will be an automatic fail if the answer is no.\nYou are not required to install feature updates or optional updates in order to meet this requirement, just high-risk or critical security updates.\nCE Requirement: All software on in-scope devices must be updated, including vulnerability fixes, within 14 days of release, where:\n- The update fixes vulnerabilities described by the vendor as ‘critical’ or ‘high-risk’                               \n- The update addresses vulnerabilities with a CVSSv3 base score of 7 or above\n- There are no details of the level of vulnerabilities the update fixes provided by the vendor",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: All software on in-scope devices must be updated, including vulnerability fixes, within 14 days of release, where: - The update fixes vulnerabilities described by the vendor as ‘critical’ or ‘high-risk’ - The update addresses vulnerabilities with a CVSSv3 base score of 7 or above - There are no details of the level of vulnerabilities the update fixes provided by the vendor",
+      "compliantAnswer": "Yes",
+      "dependsOn": null
+    },
+    {
+      "id": "A6.5.1",
+      "section": "A6",
+      "subsection": null,
+      "text": "Are all updates applied on your applications by enabling auto updates?",
+      "guidance": "Most devices have the option to enable auto updates. Auto updates should be enabled where possible.\n  \nCE Requirement: All software on in-scope devices must have automatic updates enabled where possible.",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: All software on in-scope devices must have automatic updates enabled where possible.",
+      "compliantAnswer": "Yes",
+      "dependsOn": null
+    },
+    {
+      "id": "A6.5.2",
+      "section": "A6",
+      "subsection": null,
+      "text": "Where auto updates are not being used, how do you ensure all high-risk or critical security updates and vulnerability fixes of all software are applied within 14 days of release?",
+      "guidance": "It is not always possible to apply auto updates, this is often the case when you have critical systems or software and you need to be in control of the updating process.\nPlease describe how any updates and vulnerability fixes are applied when auto updates are not configured. \nIf you only use auto updates, please confirm this in the notes field for this question.\nCE Requirement: All software on in-scope devices must be updated, including vulnerability fixes, within 14 days of release, where:\nThe update fixes vulnerabilities described by the vendor as ‘critical’ or ‘high-risk’                               \nThe update addresses vulnerabilities with a CVSSv3 base score of 7 or above\nThere are no details of the level of vulnerabilities the update fixes provided by the vendor",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: All software on in-scope devices must be updated, including vulnerability fixes, within 14 days of release, where: The update fixes vulnerabilities described by the vendor as ‘critical’ or ‘high-risk’ The update addresses vulnerabilities with a CVSSv3 base score of 7 or above There are no details of the level of vulnerabilities the update fixes provided by the vendor",
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A6.6",
+      "section": "A6",
+      "subsection": null,
+      "text": "Have you removed any software installed on your devices that is no longer supported and no longer receives regular updates or vulnerability fixes for security problems?",
+      "guidance": "You must remove older software from your devices when it is no longer supported by the manufacturer. Such software might include older versions of web browsers, operating systems, and all application software.\n\nCE Requirement: All software on in-scope devices must be removed from devices when it becomes unsupported, or removed from scope by using a defined sub-set that prevents all traffic to/from the internet.",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: All software on in-scope devices must be removed from devices when it becomes unsupported, or removed from scope by using a defined sub-set that prevents all traffic to/from the internet.",
+      "compliantAnswer": "Yes",
+      "dependsOn": null
+    },
+    {
+      "id": "A6.7",
+      "section": "A6",
+      "subsection": null,
+      "text": "Where you have a business need to use unsupported software, have you moved the devices and software out of scope of this assessment? Please explain how you achieve this.",
+      "guidance": "Software that is not removed from devices when it becomes un-supported will need to be placed onto its own sub-set with no internet access.\n\nIf the out-of-scope sub-set remains connected to the internet, you will not be able to achieve whole company certification and you must select ‘Partial Organisation’ in question A2.1.\n\nA sub-set is defined as a part of the organisation whose network is segregated from the rest of the organisation by a firewall or VLAN.\n\nWhere no unsupported software is used across your whole organisation, please declare this here.\n\nCE Requirement: All software on in-scope devices must be removed from devices when it becomes unsupported, or removed from scope by using a defined sub-set that prevents all traffic to/from the internet. \n\nFurther guidance:\n\nIt is important to only give users access to the resources and data necessary for their roles, and no more. All users need to have unique accounts and should not be carrying out day-to-day tasks such as invoicing or dealing with e-mail whilst logged on as a user with administrator privileges which allow significant changes to the way your computer systems work.\n\nQuestions in this section apply to: servers, desktop computers, laptops, tablets, thin clients, mobile phones, IaaS, PaaS and SaaS\n\nFurther guidance:",
+      "guidanceLinks": [
+        {
+          "text": "Subset Scoping Guidance",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2708766742/Subset+Scoping+Guidance"
+        },
+        {
+          "text": "Knowledge Hub - User Access Control",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2575663247/Control+%3A+User+Access"
+        },
+        {
+          "text": "User Access Control - FAQ",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2576646422/User+Access+Control+%3A+FAQ"
+        }
+      ],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: All software on in-scope devices must be removed from devices when it becomes unsupported, or removed from scope by using a defined sub-set that prevents all traffic to/from the internet.",
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A7.1",
+      "section": "A7",
+      "subsection": null,
+      "text": "Are your users only provided with user accounts after a process has been followed to approve their creation? Describe the process.",
+      "guidance": "You must ensure that user accounts (such as logins to laptops and accounts on servers) are only provided after they have been approved by a person with a leadership role in the business.\n\nCE Requirement: Your organisation must have in place a process to create and approve user accounts.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: Your organisation must have in place a process to create and approve user accounts.",
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A7.2",
+      "section": "A7",
+      "subsection": null,
+      "text": "Are all your user and administrative accounts accessed by entering unique credentials?",
+      "guidance": "You must ensure that no devices, applications or cloud services can be accessed without entering unique access credentials. \nAccounts must not be shared.\nCE Requirement: Authenticate users with unique credentials before granting access to applications or devices.",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: Authenticate users with unique credentials before granting access to applications or devices.",
+      "compliantAnswer": "Yes",
+      "dependsOn": null
+    },
+    {
+      "id": "A7.3",
+      "section": "A7",
+      "subsection": null,
+      "text": "How do you ensure you have deleted, or disabled, any accounts for staff who are no longer with your organisation?",
+      "guidance": "When an individual leaves your organisation, you need to stop them accessing any of your systems. \n\nCE Requirement: Remove or disable user accounts when no longer required.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: Remove or disable user accounts when no longer required.",
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A7.4",
+      "section": "A7",
+      "subsection": null,
+      "text": "Do you ensure that staff only have the access privileges that they need to do their current job? How do you do this?",
+      "guidance": "When a staff member changes job role you may also need to change their permissions to only access the files, folders and applications that they need to do their day-to-day work. \n\nFor Cyber Essentials we require that the principle of least privilege be applied.  \n\nCE Requirement: Your organisation must be in control of your user accounts and the access privileges that allow access to your organisational data and services.\n\nUser accounts with special access privileges (e.g. administrative accounts) typically have the greatest level of access to information, applications and computers. When these privileged accounts are accessed by attackers, they can cause the most amount of damage because they can usually perform actions such as installing malicious software and making changes. Special access includes privileges over and above those of normal users.\n\nIt is not acceptable to work on a day-to-day basis in a privileged “administrator” mode. \n\nQuestions in this section apply to: servers, desktop computers, laptops, tablets, thin clients, mobile phones, IaaS, PaaS and SaaS",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: Your organisation must be in control of your user accounts and the access privileges that allow access to your organisational data and services.",
+      "compliantAnswer": "Yes",
+      "dependsOn": null
+    },
+    {
+      "id": "A7.5",
+      "section": "A7",
+      "subsection": "Administrative Accounts",
+      "text": "Do you have a formal process for giving someone access to systems at an “administrator” level and can you describe this process?",
+      "guidance": "You must have a process that you follow when deciding to give someone access to systems at administrator level. This process might include approval by a person who is an owner/director/trustee/partner of the organisation.\n\nCE Requirement: Your organisation must have in place a process to create and approve user accounts.",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: Your organisation must have in place a process to create and approve user accounts.",
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A7.6",
+      "section": "A7",
+      "subsection": "Administrative Accounts",
+      "text": "How does your organisation make sure that separate accounts are used to carry out administrative tasks (such as installing software or making configuration changes)?\nThis applies to local administrator accounts, network/domain administrator accounts, and cloud service administrator accounts.",
+      "guidance": "You must use a separate administrator account from the standard user account, when carrying out administrative tasks such as installing software. Using administrator accounts all day long exposes the device to compromise by malware. \n\nCloud service administration must be carried out using separate accounts.\n\nFurther guidance:\n\nCE Requirement: Your organisation must use separate accounts to perform administrative activities only (no emailing, web browsing or other standard user activities that may expose administrative privileges to avoidable risks).",
+      "guidanceLinks": [
+        {
+          "text": "User Access - Just Enough or Just In Time",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2660663323/User+Access+-+Just+Enough+or+Just+in+Time"
+        }
+      ],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A7.7",
+      "section": "A7",
+      "subsection": "Administrative Accounts",
+      "text": "How does your organisation prevent administrator accounts from being used to carry out everyday tasks like browsing the web or accessing email?",
+      "guidance": "This question relates to the activities carried out when an administrator account is in use.\n\nYou must ensure that administrator accounts are not used to access websites or download email. Using such accounts in this way exposes the device to compromise by malware. Software and update downloads should be performed as a standard user and then installed as an administrator. You may not need a technical solution to achieve this, it could be based on good policy, procedure and regular training for staff.\n\nCE Requirement: Your organisation must use separate accounts to perform administrative activities only (no emailing, web browsing or other standard user activities that may expose administrative privileges to avoidable risks).",
+      "guidanceLinks": [],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: Your organisation must use separate accounts to perform administrative activities only (no emailing, web browsing or other standard user activities that may expose administrative privileges to avoidable risks).",
+      "compliantAnswer": "Yes",
+      "dependsOn": null
+    },
+    {
+      "id": "A7.8",
+      "section": "A7",
+      "subsection": "Administrative Accounts",
+      "text": "Do you formally track which users have administrator accounts in your organisation?",
+      "guidance": "You must track all people that have been granted administrator accounts.\n\nCE Requirement: Your organisation must have in place a process to create and approve user accounts.",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: Your organisation must have in place a process to create and approve user accounts.",
+      "compliantAnswer": "Yes",
+      "dependsOn": null
+    },
+    {
+      "id": "A7.9",
+      "section": "A7",
+      "subsection": "Administrative Accounts",
+      "text": "Do you review who should have administrative access on a regular basis?",
+      "guidance": "You must review the list of people with administrator access regularly. Depending on your business, this might be monthly, quarterly or annually. Any users who no longer need administrative access to carry out their role should have it removed.\n\nCE Requirement: Your organisation must remove or disable special access privileges when no longer required (when a member of staff changes role, for example).\n\nAll accounts require the user to authenticate. Where this is done using a password the following protections should be used:\n\n• Passwords are protected against brute-force password guessing\n\n• Technical controls are used to manage the quality of passwords\n\n• People are supported to choose unique passwords for their work accounts\n\n• There is an established process to change passwords promptly if the applicant knows or suspects the password or account has been compromised\n\nFurther guidance:",
+      "guidanceLinks": [
+        {
+          "text": "The Value of Passwords",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/3061514242/The+Value+of+Passwords"
+        }
+      ],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: Your organisation must remove or disable special access privileges when no longer required (when a member of staff changes role, for example).",
+      "compliantAnswer": "Yes",
+      "dependsOn": null
+    },
+    {
+      "id": "A7.10",
+      "section": "A7",
+      "subsection": "Password-Based Authentication",
+      "text": "Where you have systems that require passwords (or where passwords are a backup for a passwordless system), how are they protected from brute-force attacks?",
+      "guidance": "A brute-force attack is an attempt to discover a password by systematically trying every possible combination of letters, numbers, and symbols until you discover the one correct combination that works.\n\nInformation on how to protect against brute-force password guessing can be found in the Password-based authentication section, under the User Access Control section in the ‘Cyber Essentials Requirements for IT Infrastructure’ document.\n\nCE Requirement: Passwords are protected against brute-force password guessing by implementing at least one of:\n\n• multi-factor authentication \n• ‘throttling' the rate of attempts, so that the length of time the user must wait between attempts increases with each unsuccessful attempt – you shouldn’t allow more than 10 guesses in 5 minutes                               \n• locking devices after no more than 10 unsuccessful attempts",
+      "guidanceLinks": [
+        {
+          "text": "Cyber Essentials Requirements for IT Infrastructure v3.3",
+          "url": "https://www.ncsc.gov.uk/files/cyber-essentials-requirements-for-it-infrastructure-v3-3.pdf"
+        }
+      ],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A7.11",
+      "section": "A7",
+      "subsection": "Password-Based Authentication",
+      "text": "Which technical controls are used to manage the quality of your passwords within your organisation?",
+      "guidance": "Acceptable technical controls that you can use to manage the quality of your passwords are outlined in the section about Password-based authentication in the ‘Cyber Essentials Requirements for IT Infrastructure’ document.\n\nCE Requirement: Use technical controls to manage the quality of passwords. This will include one of the following:\n\n• using multi-factor authentication \n• a minimum password length of at least 12 characters, with no maximum length restrictions\n• a minimum password length of at least 8 characters, with no maximum length restrictions and use automatic blocking of common passwords using a deny list.",
+      "guidanceLinks": [
+        {
+          "text": "Cyber Essentials Requirements for IT Infrastructure v3.3",
+          "url": "https://www.ncsc.gov.uk/files/cyber-essentials-requirements-for-it-infrastructure-v3-3.pdf"
+        }
+      ],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A7.12",
+      "section": "A7",
+      "subsection": "Password-Based Authentication",
+      "text": "Please explain how you encourage people to use unique and strong passwords.",
+      "guidance": "You need to support those that have access to your organisational data and services by informing them of how they should pick a strong and unique password.\n\nFurther information can be found in the Password-based authentication section, under the User Access Control section in the Cyber Essentials Requirements for IT Infrastructure document.\n\nCE Requirement: Support users to choose unique passwords for their work accounts by:\n\n• educating people about avoiding common passwords, such as a pet's name, common keyboard patterns or passwords they have used elsewhere. This could include teaching people to use the password generator feature built into some password managers\n• encouraging people to choose longer passwords by promoting the use of multiple words (a minimum of three) to create a password (such as the NCSC’s guidance on using three random words)\n• providing usable secure storage for passwords (for example a password manager or secure locked cabinet) with clear information about how and when it can be used\n• not enforcing regular password expiry\n• not enforcing password complexity requirements",
+      "guidanceLinks": [
+        {
+          "text": "Cyber Essentials Requirements for IT Infrastructure v3.3",
+          "url": "https://www.ncsc.gov.uk/files/cyber-essentials-requirements-for-it-infrastructure-v3-3.pdf"
+        }
+      ],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A7.13",
+      "section": "A7",
+      "subsection": "Password-Based Authentication",
+      "text": "Do you have a process for when you believe the passwords or accounts have been compromised?",
+      "guidance": "You must have an established process that details how to change passwords promptly if you believe or suspect a password or account has been compromised.\n\nCE Requirement: You should make sure there is an established process in place to change passwords promptly if you know or suspect a password or account has been compromised. \n\nFurther guidance :",
+      "guidanceLinks": [
+        {
+          "text": "Compromised accounts",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2851668057/What+do+we+mean+by+a+compromised+account+and+how+would+you+know+if+this+has+happened"
+        }
+      ],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: You should make sure there is an established process in place to change passwords promptly if you know or suspect a password or account has been compromised.",
+      "compliantAnswer": "Yes",
+      "dependsOn": null
+    },
+    {
+      "id": "A7.14",
+      "section": "A7",
+      "subsection": "Password-Based Authentication",
+      "text": "Do all of your cloud services have multi-factor authentication (MFA) available as part of the service?\nA cloud service is an on-demand, scalable service, hosted on shared infrastructure, and accessible via the internet. For the purposes of Cyber Essentials, a cloud service will be accessed via an account (which may be credentials issued by your organisation or an email address used for business purposes) and will store or process data for your organisation.",
+      "guidance": "Where your systems and cloud services support multi-factor authentication (MFA)- for example, a text message, a one-time access code, or a notification from an authentication app- you must enable it for all users and administrators. \nFor more information see the NCSC’s guidance on MFA at\n\nIf a cloud service does not have its own MFA solution but can be configured to link to another cloud service to provide MFA, that link must be configured.\nMany cloud services use another cloud service to provide MFA. Examples of cloud services that can be linked to are Azure, MS365, Google Workspace.\nCE Requirement: Your organisation must implement MFA, where available – authentication to cloud services must always use MFA.\nFurther guidance:",
+      "guidanceLinks": [
+        {
+          "text": "Multi-factor authentication for online services",
+          "url": "https://www.ncsc.gov.uk/guidance/multi-factor-authentication-online-services"
+        },
+        {
+          "text": "Applying MFA to access cloud services",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2651783327/Applying+MFA+to+access+cloud+services"
+        },
+        {
+          "text": "Securing Your Cloud Services",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2650538068/Securing+your+cloud+services"
+        }
+      ],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": "Yes",
+      "dependsOn": null
+    },
+    {
+      "id": "A7.15",
+      "section": "A7",
+      "subsection": "Password-Based Authentication",
+      "text": "If you have answered ‘No’ to question A7.14, please provide a list of your cloud services that do not provide any option for MFA.",
+      "guidance": "You must provide a list of cloud services that are in use by your organisation that do not provide any option for MFA. \nPlease note that this will be an automatic fail if a cloud service listed here does have the option for MFA.\nA list of cloud services along with their MFA availability can be found here:\n\nPlease note that this list is not exhaustive.",
+      "guidanceLinks": [
+        {
+          "text": "Cloud Services MFA",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/4186898503/Cloud+Services+MFA"
+        }
+      ],
+      "answerType": "text",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": null,
+      "dependsOn": {
+        "questionId": "A7.14",
+        "equals": "No"
+      }
+    },
+    {
+      "id": "A7.16",
+      "section": "A7",
+      "subsection": "Password-Based Authentication",
+      "text": "Has MFA been applied to all administrators of your cloud services, excluding any listed in A7.15 that do not provide it?",
+      "guidance": "It is required that all administrator accounts on cloud service must apply multi-factor authentication in conjunction with a password of at least 8 characters.\nPlease note that the assessment will fail if the answer is no.\nCE Requirement: Your organisation must implement MFA, where available – authentication to cloud services must always use MFA.",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: Your organisation must implement MFA, where available – authentication to cloud services must always use MFA.",
+      "compliantAnswer": "Yes",
+      "dependsOn": null
+    },
+    {
+      "id": "A7.17",
+      "section": "A7",
+      "subsection": "Password-Based Authentication",
+      "text": "Has MFA been applied to all users of your cloud services, excluding any listed in A7.15 that do not provide it?",
+      "guidance": "All users of your cloud services must use MFA in conjunction with a password of at least 8 characters.\nPlease note that the assessment will fail if the answer is no.\nCE Requirement: Your organisation must implement MFA, where available – authentication to cloud services must always use MFA.\n\nMalware (such as computer viruses) is generally used to steal or damage information.  Malware is often used in conjunction with other kinds of attack such as ‘phishing’ (obtaining information by confidence trickery) and social network sites (which can be mined for information useful to a hacker) to provide a focussed attack on an organisation. Anti-malware solutions (including anti-virus) are available from commercial suppliers, some free, but usually as complete software and support packages.\n\nMalware is continually evolving, so it is important that the supplier includes detection facilities which are updated as frequently as possible. Anti-malware products can also help confirm whether websites you visit are malicious.\n\nQuestions in this section apply to: servers, desktop computers, laptops, tablets, thin clients, mobile phones, IaaS, PaaS and SaaS\n\nFurther guidance :",
+      "guidanceLinks": [
+        {
+          "text": "Knowledge Hub - Malware Protection",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2575925382/Control+%3A+Malware+Protection"
+        },
+        {
+          "text": "Malware Protection - FAQ",
+          "url": "https://ce-knowledge-hub.iasme.co.uk/space/CEKH/2577498118/Malware+Protection+%3A+FAQ"
+        }
+      ],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: Your organisation must implement MFA, where available – authentication to cloud services must always use MFA.",
+      "compliantAnswer": "Yes",
+      "dependsOn": null
+    },
+    {
+      "id": "A8.1",
+      "section": "A8",
+      "subsection": null,
+      "text": "Are all of your desktop computers, laptops, tablets and mobile phones protected from malware by either:\nA - Having anti-malware software installed\nand/or\nB - Limiting installation of applications by application allow listing - for example, using an app store and a list of approved applications, using a Mobile Device Management (MDM) solution\nor\nC - None of the above, please describe",
+      "guidance": "Please select all the options that are in use in your organisation across all your devices. Most organisations that use smartphones and standard laptops will need to select both option A and B. \n\nOption A - option for all in-scope devices running Windows or macOS including servers, desktop computers, laptop computers\n\nOption B - option for all in-scope devices\n\nOption C - none of the above, explanation notes will be required.\n\nCE Requirement: You must make sure that a malware protection mechanism is active on all devices in scope. For each device, you must use at least one of the options listed below.\n\n• Anti-malware software (option for in-scope devices running Windows or MacOS including servers, desktop computers, laptop computers)\n• Application allow listing (option for all in-scope devices). Only approved applications, restricted by code signing, are allowed to execute on devices.",
+      "guidanceLinks": [],
+      "answerType": "choice",
+      "options": [
+        {
+          "value": "A",
+          "label": "Anti-malware software"
+        },
+        {
+          "value": "B",
+          "label": "Application allow listing / limiting installation of applications to an approved list (application allow listing)"
+        }
+      ],
+      "multiSelect": true,
+      "requirement": "CE Requirement: You must make sure that a malware protection mechanism is active on all devices in scope. For each device, you must use at least one of the options listed below.",
+      "compliantAnswer": null,
+      "dependsOn": null
+    },
+    {
+      "id": "A8.2",
+      "section": "A8",
+      "subsection": null,
+      "text": "If Option A has been selected: Where you have anti-malware software installed, is it set to update in line with the vendor's guidelines and prevent malware from running on detection?",
+      "guidance": "This is usually the default setting for anti-malware software. You can check these settings in the configuration screen for your anti-malware software. You can use any commonly used anti-malware product, whether free or paid-for as long as it can meet the requirements in this question. For the avoidance of doubt, Windows Defender is suitable for this purpose.\n\nCE Requirement: If you use anti-malware software to protect your device it must be configured to:\n\n• be updated in line with vendor recommendations\n• prevent malware from running\n• prevent the execution of malicious code",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: If you use anti-malware software to protect your device it must be configured to:",
+      "compliantAnswer": "Yes",
+      "dependsOn": {
+        "questionId": "A8.1",
+        "includes": "A"
+      }
+    },
+    {
+      "id": "A8.3",
+      "section": "A8",
+      "subsection": null,
+      "text": "If Option A has been selected: Where you have anti-malware software installed, is it set to scan web pages you visit and warn you about accessing malicious websites?",
+      "guidance": "Your anti-malware software or internet browser should be configured to prevent access to known malicious websites. On Windows 11, MS Defender SmartScreen can provide this functionality.\n\nCE Requirement: If you use anti-malware software to protect your device it must be configured to:\n\n• prevent connections to malicious websites over the internet.",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: If you use anti-malware software to protect your device it must be configured to:",
+      "compliantAnswer": "Yes",
+      "dependsOn": {
+        "questionId": "A8.1",
+        "includes": "A"
+      }
+    },
+    {
+      "id": "A8.4",
+      "section": "A8",
+      "subsection": null,
+      "text": "If Option B has been selected: Where you use an app-store or application signing, are users restricted from installing unsigned applications?",
+      "guidance": "Some operating systems which include Windows, Chromebooks, mobile phones and tablets restrict you from installing unsigned applications. Usually you have to \"root\" or \"jailbreak\" a device to allow unsigned applications.\n\nCE Requirement: Only approved applications, restricted by code signing, are allowed to execute on devices.",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: Only approved applications, restricted by code signing, are allowed to execute on devices.",
+      "compliantAnswer": "Yes",
+      "dependsOn": {
+        "questionId": "A8.1",
+        "includes": "B"
+      }
+    },
+    {
+      "id": "A8.5",
+      "section": "A8",
+      "subsection": null,
+      "text": "If Option B has been selected: Where you use an app-store or application signing, do you ensure that users only install applications that have been approved by your organisation and do you maintain this list of approved applications?",
+      "guidance": "You must create a list of approved applications and ensure users only install these applications on their devices. This includes employee-owned devices. You may use Mobile Device Management (MDM) software to meet this requirement but you are not required to use MDM software if you can meet the requirements using good policy, processes and training of staff.\n\nCE Requirement:\n• actively approve such applications before deploying them to devices\n• maintain a current list of approved applications, users must not be able to install any application that is unsigned or has an invalid signature",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": "CE Requirement: • actively approve such applications before deploying them to devices • maintain a current list of approved applications, users must not be able to install any application that is unsigned or has an invalid signature",
+      "compliantAnswer": "Yes",
+      "dependsOn": {
+        "questionId": "A8.1",
+        "includes": "B"
+      }
+    },
+    {
+      "id": "Attestation",
+      "section": "ATT",
+      "subsection": null,
+      "text": "Have all the answers provided in this assessment been validated by an appropriate person, such as a board-level representative, prior to submission?",
+      "guidance": "An appropriate person is someone who is an officer of the company, typically a director or board member, and has the associated legal authority and duties. The submission will be returned if it has not been validated by a board member.",
+      "guidanceLinks": [],
+      "answerType": "yesno",
+      "options": [],
+      "multiSelect": false,
+      "requirement": null,
+      "compliantAnswer": "Yes",
+      "dependsOn": null
+    }
+  ]
+}
