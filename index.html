@@ -13,18 +13,14 @@
 </head>
 <body>
   <header id="app-header">
+    <button id="sidebar-toggle-btn" type="button" aria-label="Toggle sidebar">&#9776;</button>
     <div class="header-brand">
-      <span class="brand-mark" aria-hidden="true">&#9733;</span>
+      <img class="brand-mark" src="assets/icons/icon-192.png" alt="" aria-hidden="true" />
       <h1>Cyber Essentials Self-Assessment</h1>
-    </div>
-    <div class="header-actions">
-      <button id="theme-toggle-btn" type="button" title="Toggle light/dark theme">&#9788;</button>
-      <button id="print-btn" type="button">Print / Save PDF</button>
     </div>
   </header>
 
   <div id="app-layout">
-    <button id="sidebar-toggle-btn" type="button" aria-label="Toggle sidebar">&#9776;</button>
     <aside id="sidebar">
       <div class="sidebar-section">
         <div class="sidebar-heading-row">
@@ -42,6 +38,13 @@
           <button id="export-btn" type="button">Export (.json)</button>
           <button id="import-btn" type="button">Import (.json)</button>
           <input id="import-input" type="file" accept="application/json" hidden />
+        </div>
+      </div>
+      <div class="sidebar-section">
+        <h2>Appearance</h2>
+        <div class="sidebar-buttons">
+          <button id="theme-toggle-btn" type="button" title="Toggle light/dark theme">&#9788; Theme</button>
+          <button id="print-btn" type="button">Print / Save PDF</button>
         </div>
       </div>
     </aside>
@@ -87,7 +90,7 @@
       question set (Danzell, 2026, v16.3) &mdash; see <a href="README.md">README</a> for attribution.
       This tool is not affiliated with IASME or NCSC and does not submit or store data anywhere but your browser.
     </p>
-    <p class="version-tag">v1.0.0 &middot; <a href="CHANGELOG.md">Changelog</a></p>
+    <p class="version-tag">v1.0.1 &middot; <a href="CHANGELOG.md">Changelog</a></p>
   </footer>
 
   <script src="assets/data.js"></script>

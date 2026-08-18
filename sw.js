@@ -1,6 +1,6 @@
 // Caches the app shell on first visit so the app works offline afterwards.
 // Bump CACHE_VERSION whenever a cached file's contents change.
-const CACHE_VERSION = 'ce-self-assessment-v2';
+const CACHE_VERSION = 'ce-self-assessment-v3';
 
 const APP_SHELL = [
   './',
