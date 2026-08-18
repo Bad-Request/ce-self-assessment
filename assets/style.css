@@ -278,6 +278,7 @@ dialog#confirm-dialog::backdrop { background: rgba(0,0,0,0.4); }
 
 #app-footer { max-width: 900px; margin: 0 auto; padding: 1rem 1.5rem 3rem; color: var(--text-muted); font-size: 0.8rem; }
 #app-footer a { color: var(--brand); }
+.version-tag { margin-top: 0.4rem; font-variant-numeric: tabular-nums; }
 
 @media (max-width: 800px) {
   #sidebar-toggle-btn { display: block; }

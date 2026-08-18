@@ -18,6 +18,9 @@ same architecture: no server-side component at all, no build step, no
 database. Plain HTML/CSS/JS, served as a folder of static files, installable
 as an offline Progressive Web App.
 
+See [CHANGELOG.md](CHANGELOG.md) for release history (this project follows
+[Semantic Versioning](https://semver.org/)).
+
 ## Unofficial tool — important
 
 This is **not** the official IASME/NCSC Cyber Essentials application
