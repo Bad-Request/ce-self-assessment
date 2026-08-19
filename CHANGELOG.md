@@ -5,6 +5,14 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project uses [Semantic Versioning](https://semver.org/).
 
+## [1.2.1] - 2026-08-19
+
+### Fixed
+
+- A6.4.2 and A6.5.2 are now only shown when A6.4.1 and A6.5.1 (respectively)
+  are answered "No" — previously they were always shown regardless of the
+  auto-update answer (issue #13).
+
 ## [1.2.0] - 2026-08-19
 
 ### Added
