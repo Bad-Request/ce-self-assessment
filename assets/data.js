@@ -1821,7 +1821,7 @@ window.CE_DATASET = {
       "options": [],
       "multiSelect": false,
       "requirement": "CE Requirement: Your organisation must be in control of your user accounts and the access privileges that allow access to your organisational data and services.",
-      "compliantAnswer": "Yes",
+      "compliantAnswer": null,
       "dependsOn": null
     },
     {
@@ -1868,7 +1868,7 @@ window.CE_DATASET = {
       "options": [],
       "multiSelect": false,
       "requirement": "CE Requirement: Your organisation must use separate accounts to perform administrative activities only (no emailing, web browsing or other standard user activities that may expose administrative privileges to avoidable risks).",
-      "compliantAnswer": "Yes",
+      "compliantAnswer": null,
       "dependsOn": null
     },
     {
