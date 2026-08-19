@@ -210,10 +210,23 @@ export function renderFramework() {
   attachHandlers(assessment.answers);
 }
 
-const debouncedTextSave = debounce((qid, value, notes) => {
-  setAnswer(qid, value, notes);
-  rerenderCallback?.({ skipFrameworkRerender: true });
-}, 350);
+// Keyed per question so typing in one field doesn't cancel a pending save
+// for another (a single shared debounce would silently drop whichever
+// field's save got pre-empted before its timer fired).
+const textSaveDebouncers = new Map();
+
+function debouncedTextSave(qid, value, notes) {
+  if (!textSaveDebouncers.has(qid)) {
+    textSaveDebouncers.set(
+      qid,
+      debounce((v, n) => {
+        setAnswer(qid, v, n);
+        rerenderCallback?.({ skipFrameworkRerender: true });
+      }, 350)
+    );
+  }
+  textSaveDebouncers.get(qid)(value, notes);
+}
 
 function attachHandlers() {
   dom.framework.querySelectorAll('input[type="radio"]').forEach((el) => {
