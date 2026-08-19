@@ -5,6 +5,15 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project uses [Semantic Versioning](https://semver.org/).
 
+## [1.2.3] - 2026-08-19
+
+### Fixed
+
+- A question's "Not yet answered" / "Answered" status badge now updates as
+  soon as a free-text answer or notes field is saved, instead of staying
+  stuck until something unrelated (e.g. answering a different question)
+  forced a full re-render of the question list (issue #11).
+
 ## [1.2.2] - 2026-08-19
 
 ### Fixed
