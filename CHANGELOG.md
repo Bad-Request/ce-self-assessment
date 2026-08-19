@@ -5,6 +5,16 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project uses [Semantic Versioning](https://semver.org/).
 
+## [1.2.5] - 2026-08-19
+
+### Fixed
+
+- A7.4 and A7.7 are free-text "describe your process" questions but had a
+  `compliantAnswer` of "Yes" left over from data extraction, so any typed
+  answer was compared against the literal string "Yes" and always flagged
+  as "Not compliant" instead of simply "Answered". Cleared
+  `compliantAnswer` on both, matching their sibling questions (issue #18).
+
 ## [1.2.4] - 2026-08-19
 
 ### Fixed
