@@ -45,7 +45,7 @@ A single numbered question (e.g. `A4.2`, `A7.14`).
 | `guidanceLinks` | `{text, url}[]` | Further-guidance hyperlinks associated with this question. |
 | `answerType` | `"yesno" \| "text" \| "choice" \| "lettered" \| "optinout"` | See below. |
 | `options` | `{value, label}[]` | Present for `choice`, `lettered`, `optinout`. Empty otherwise. |
-| `multiSelect` | boolean | If true, more than one option may be selected (e.g. A8.1 "A and/or B", A1.10 "select two"). |
+| `multiSelect` | boolean | If true, more than one option may be selected (e.g. A8.1 "A and/or B", A1.10 "select two", A5.5 where more than one authentication option may be in use). Applies to `choice` and `lettered` alike. |
 | `requirement` | string \| null | The extracted "CE Requirement: …" sentence from `guidance`, where present, surfaced separately for quick reference. |
 | `compliantAnswer` | `"Yes" \| "No" \| null` | For `yesno` questions where the question set's CE Requirement implies a specific compliant answer. `null` means informational/no single correct answer (e.g. organisation details, free-text process descriptions). |
 | `automaticFail` | boolean (optional) | Set on the handful of questions the question set explicitly calls out as an automatic fail if answered non-compliantly (e.g. `A6.4`, 14-day critical patching). |

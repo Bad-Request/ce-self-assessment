@@ -5,6 +5,17 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project uses [Semantic Versioning](https://semver.org/).
 
+## [1.3.0] - 2026-08-19
+
+### Changed
+
+- A5.5 (which authentication option do you use) now allows selecting more
+  than one option, since an organisation may legitimately use more than
+  one authentication control (e.g. both MFA and a 12-character minimum
+  password policy). It's rendered as checkboxes instead of radio buttons.
+  A previously saved single answer is still read and shown correctly
+  (issue #19).
+
 ## [1.2.5] - 2026-08-19
 
 ### Fixed
