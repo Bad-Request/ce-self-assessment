@@ -5,6 +5,17 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project uses [Semantic Versioning](https://semver.org/).
 
+## [1.2.2] - 2026-08-19
+
+### Fixed
+
+- Free-text answers (question notes and text-type answers) shared a single
+  debounce timer across the whole form, so typing into one field and then
+  switching to another within ~350ms silently discarded the first field's
+  answer before it was ever saved — making the progress bars appear stuck
+  as text answers went uncounted. Each question's field now debounces
+  independently (issue #12).
+
 ## [1.2.1] - 2026-08-19
 
 ### Fixed
