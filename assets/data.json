@@ -1675,7 +1675,10 @@
       "multiSelect": false,
       "requirement": "CE Requirement: All software on in-scope devices must be updated, including vulnerability fixes, within 14 days of release, where:",
       "compliantAnswer": null,
-      "dependsOn": null
+      "dependsOn": {
+        "questionId": "A6.4.1",
+        "equals": "No"
+      }
     },
     {
       "id": "A6.5",
@@ -1717,7 +1720,10 @@
       "multiSelect": false,
       "requirement": "CE Requirement: All software on in-scope devices must be updated, including vulnerability fixes, within 14 days of release, where: The update fixes vulnerabilities described by the vendor as ‘critical’ or ‘high-risk’ The update addresses vulnerabilities with a CVSSv3 base score of 7 or above There are no details of the level of vulnerabilities the update fixes provided by the vendor",
       "compliantAnswer": null,
-      "dependsOn": null
+      "dependsOn": {
+        "questionId": "A6.5.1",
+        "equals": "No"
+      }
     },
     {
       "id": "A6.6",
