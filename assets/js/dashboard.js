@@ -42,7 +42,7 @@ export function renderDashboard() {
       <ul class="non-compliant-list">
         ${summary.nonCompliant
           .map(
-            (q) => `<li><a href="#section-${q.section}" data-jump="${q.id}">${q.id}${q.automaticFail ? ' <span class="auto-fail-badge">automatic fail</span>' : ''}</a> — ${escapeHtml(q.text.split('\n')[0])}</li>`
+            (q) => `<li><a href="#q-${q.id}" data-jump-id="${q.id}">${q.id}${q.automaticFail ? ' <span class="auto-fail-badge">automatic fail</span>' : ''}</a> — ${escapeHtml(q.text.split('\n')[0])}</li>`
           )
           .join('')}
       </ul>`;

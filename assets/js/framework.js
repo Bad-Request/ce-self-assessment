@@ -1,9 +1,10 @@
 // Builds the section/question tree and applies per-question state to it.
 
 import { dom } from './dom.js';
-import { sections, questionsForSection, isQuestionVisible, questionStatus } from './model.js';
+import { sections, questions, questionsForSection, isQuestionVisible, questionStatus } from './model.js';
 import { getCurrent, setAnswer } from './assessments.js';
 import { debounce } from './utils.js';
+import { showToast } from './ui-shell.js';
 
 const STATUS_LABEL = {
   unanswered: 'Not yet answered',
@@ -34,6 +35,26 @@ function escapeHtml(str) {
   const div = document.createElement('div');
   div.textContent = str ?? '';
   return div.innerHTML;
+}
+
+// Ids sorted longest-first so e.g. "A1.10.1" matches before "A1.10".
+const REFERENCEABLE_IDS = questions
+  .map((q) => q.id)
+  .filter((id) => /^A\d/.test(id))
+  .sort((a, b) => b.length - a.length);
+const QUESTION_ID_REGEX = new RegExp(
+  `\\b(${REFERENCEABLE_IDS.map((id) => id.replace(/\./g, '\\.')).join('|')})\\b`,
+  'g'
+);
+
+// Turns any other question id mentioned in (already-escaped) guidance text into a
+// clickable link that jumps to that question's card, e.g. "see A5.4" -> a link to A5.4.
+function linkQuestionReferences(escapedText, ownId) {
+  if (REFERENCEABLE_IDS.length === 0) return escapedText;
+  return escapedText.replace(QUESTION_ID_REGEX, (match) => {
+    if (match === ownId) return match;
+    return `<a href="#q-${match}" class="ref-link" data-jump-id="${match}">${match}</a>`;
+  });
 }
 
 function buildAnswerControl(question, answers) {
@@ -100,14 +121,14 @@ function buildQuestionCard(question, answers) {
   const notes = currentNotes(answers, question.id);
   const needsNotesField = question.answerType !== 'text';
 
-  return `<div class="question-card status-${status}" data-qid="${question.id}">
+  return `<div class="question-card status-${status}" id="q-${question.id}" data-qid="${question.id}">
     <div class="question-head">
       <span class="question-id">${question.id}</span>
       <span class="status-badge status-${status}">${STATUS_LABEL[status]}</span>
     </div>
     <p class="question-text">${escapeHtml(question.text)}</p>
     ${question.requirement ? `<p class="requirement">${escapeHtml(question.requirement)}</p>` : ''}
-    ${question.guidance ? `<details class="guidance"><summary>Guidance</summary><p>${escapeHtml(question.guidance)}</p>${renderLinks(question.guidanceLinks)}</details>` : ''}
+    ${question.guidance ? `<details class="guidance"><summary>Guidance</summary><p>${linkQuestionReferences(escapeHtml(question.guidance), question.id)}</p>${renderLinks(question.guidanceLinks)}</details>` : ''}
     <div class="answer-control">${buildAnswerControl(question, answers)}</div>
     ${
       needsNotesField
@@ -151,6 +172,25 @@ function buildSection(section, answers) {
     ${renderLinks(section.links)}
     <div class="section-body">${body}</div>
   </section>`;
+}
+
+// Jumps to another question's card when a guidance reference link (or the
+// dashboard's non-compliant list) is clicked. Delegated once on document
+// since question cards are re-created on every render.
+export function initQuestionJumps() {
+  document.addEventListener('click', (event) => {
+    const link = event.target.closest('[data-jump-id]');
+    if (!link) return;
+    event.preventDefault();
+    const target = document.getElementById(`q-${link.dataset.jumpId}`);
+    if (!target) {
+      showToast(`${link.dataset.jumpId} isn't currently shown — it depends on a different answer.`);
+      return;
+    }
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    target.classList.add('highlight');
+    setTimeout(() => target.classList.remove('highlight'), 1600);
+  });
 }
 
 let rerenderCallback = null;

@@ -5,6 +5,22 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project uses [Semantic Versioning](https://semver.org/).
 
+## [1.2.0] - 2026-08-19
+
+### Added
+
+- Where a question's guidance text references another question (e.g. "see
+  A5.4"), it's now a clickable link that jumps straight to that question's
+  card and briefly highlights it. If the referenced question isn't
+  currently shown (its own branching condition isn't met), a toast
+  explains why instead of jumping nowhere (issue #7).
+
+### Fixed
+
+- The dashboard's "flagged as not compliant" list now actually jumps to
+  the specific question when clicked, using the same jump mechanism —
+  previously it only linked to the top of the containing section.
+
 ## [1.1.0] - 2026-08-19
 
 ### Added

@@ -10,7 +10,7 @@ import {
   renameCurrent,
   renderAssessmentList,
 } from './assessments.js';
-import { renderFramework, setOnAnswerChange } from './framework.js';
+import { renderFramework, setOnAnswerChange, initQuestionJumps } from './framework.js';
 import { renderDashboard } from './dashboard.js';
 
 function renderAll() {
@@ -105,6 +105,7 @@ function init() {
   initTheme();
   initSidebar();
   initBackToTop();
+  initQuestionJumps();
   initAssessments();
   wireHeader();
   renderAll();
