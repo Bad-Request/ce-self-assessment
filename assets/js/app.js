@@ -1,5 +1,5 @@
 import { dom } from './dom.js';
-import { showToast, confirmDialog, initTheme, initSidebar } from './ui-shell.js';
+import { showToast, confirmDialog, initTheme, initSidebar, initBackToTop } from './ui-shell.js';
 import { downloadJson } from './download.js';
 import {
   initAssessments,
@@ -104,6 +104,7 @@ function wireHeader() {
 function init() {
   initTheme();
   initSidebar();
+  initBackToTop();
   initAssessments();
   wireHeader();
   renderAll();

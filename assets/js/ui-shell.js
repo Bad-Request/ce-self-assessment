@@ -72,3 +72,19 @@ export function initSidebar() {
     dom.sidebar?.classList.toggle('collapsed');
   });
 }
+
+const BACK_TO_TOP_THRESHOLD = 400;
+
+export function initBackToTop() {
+  if (!dom.backToTopBtn) return;
+
+  const updateVisibility = () => {
+    dom.backToTopBtn.hidden = window.scrollY < BACK_TO_TOP_THRESHOLD;
+  };
+  window.addEventListener('scroll', updateVisibility, { passive: true });
+  updateVisibility();
+
+  dom.backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
