@@ -245,6 +245,16 @@ button.danger:hover { background: var(--warn-bg); }
 .guidance { margin-bottom: 0.6rem; }
 .guidance summary { cursor: pointer; color: var(--brand); font-size: 0.85rem; }
 .guidance p { white-space: pre-line; color: var(--text-muted); font-size: 0.9rem; }
+.ref-link { color: var(--brand); font-weight: 600; text-decoration: none; }
+.ref-link:hover { text-decoration: underline; }
+
+.question-card.highlight {
+  animation: question-highlight 1.6s ease-out;
+}
+@keyframes question-highlight {
+  from { box-shadow: 0 0 0 3px var(--brand); }
+  to { box-shadow: 0 0 0 0 transparent; }
+}
 
 .option-group { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 0.5rem; }
 .option { display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.92rem; }
