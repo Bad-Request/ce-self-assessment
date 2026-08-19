@@ -1,7 +1,7 @@
 // Builds the section/question tree and applies per-question state to it.
 
 import { dom } from './dom.js';
-import { sections, questions, questionsForSection, isQuestionVisible, questionStatus } from './model.js';
+import { sections, questions, questionsForSection, isQuestionVisible, questionStatus, getQuestion } from './model.js';
 import { getCurrent, setAnswer } from './assessments.js';
 import { debounce } from './utils.js';
 import { showToast } from './ui-shell.js';
@@ -215,12 +215,34 @@ export function renderFramework() {
 // field's save got pre-empted before its timer fired).
 const textSaveDebouncers = new Map();
 
+// Saving a text answer skips the full framework rerender (it would blow
+// away the textarea the user is still typing in), so the card's own
+// status badge needs updating directly instead — otherwise it's stuck
+// showing "Not yet answered" until something unrelated forces a full
+// rerender. Safe to do without a full rebuild: no dependsOn rule in the
+// question set branches on a text-type question's value.
+function updateCardStatus(qid) {
+  const question = getQuestion(qid);
+  const card = document.getElementById(`q-${qid}`);
+  if (!question || !card) return;
+  const assessment = getCurrent();
+  if (!assessment) return;
+  const status = questionStatus(question, assessment.answers);
+  card.className = `question-card status-${status}`;
+  const badge = card.querySelector('.status-badge');
+  if (badge) {
+    badge.className = `status-badge status-${status}`;
+    badge.textContent = STATUS_LABEL[status];
+  }
+}
+
 function debouncedTextSave(qid, value, notes) {
   if (!textSaveDebouncers.has(qid)) {
     textSaveDebouncers.set(
       qid,
       debounce((v, n) => {
         setAnswer(qid, v, n);
+        updateCardStatus(qid);
         rerenderCallback?.({ skipFrameworkRerender: true });
       }, 350)
     );
