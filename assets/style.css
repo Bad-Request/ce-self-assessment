@@ -193,7 +193,7 @@ button.danger:hover { background: var(--warn-bg); }
 }
 .section-bar-label { font-size: 0.85rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .section-bar-track { background: var(--bg); border-radius: 999px; height: 8px; overflow: hidden; }
-.section-bar-fill { background: var(--ok); height: 100%; }
+.section-bar-fill { display: block; background: var(--ok); height: 100%; }
 .section-bar-row.has-issues .section-bar-fill { background: var(--warn); }
 .section-bar-count { font-size: 0.8rem; color: var(--text-muted); text-align: right; }
 
