@@ -77,12 +77,15 @@ function buildAnswerControl(question, answers) {
     return radioGroup(question.id, question.options, value);
   }
 
-  if (question.answerType === 'lettered' || (question.answerType === 'choice' && !question.multiSelect)) {
+  if (question.answerType === 'lettered' || question.answerType === 'choice') {
+    if (question.multiSelect) {
+      // A previously single-select answer (e.g. saved before a question was
+      // switched to multiSelect) is a bare string — normalise it into an array
+      // rather than silently dropping it from the checkboxes.
+      const values = Array.isArray(value) ? value : value ? [value] : [];
+      return checkboxGroup(question.id, question.options, values);
+    }
     return radioGroup(question.id, question.options, value);
-  }
-
-  if (question.answerType === 'choice' && question.multiSelect) {
-    return checkboxGroup(question.id, question.options, Array.isArray(value) ? value : []);
   }
 
   return '';

@@ -1399,7 +1399,7 @@ window.CE_DATASET = {
           "label": "None of the above, please describe"
         }
       ],
-      "multiSelect": false,
+      "multiSelect": true,
       "requirement": null,
       "compliantAnswer": null,
       "dependsOn": {
