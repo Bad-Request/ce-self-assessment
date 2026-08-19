@@ -5,6 +5,17 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project uses [Semantic Versioning](https://semver.org/).
 
+## [1.2.4] - 2026-08-19
+
+### Fixed
+
+- The per-section progress bars on the dashboard now visually fill as
+  questions are answered. The bar counts (e.g. "9/18") were always
+  correct, but the coloured fill itself never appeared to move — its
+  `<span>` had no `display: block`/`inline-block`, and `width` has no
+  effect on inline elements, so the fill's width was silently ignored
+  regardless of progress (issue #12).
+
 ## [1.2.3] - 2026-08-19
 
 ### Fixed
