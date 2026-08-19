@@ -30,4 +30,6 @@ export const dom = {
 
   emptyState: document.getElementById('empty-state'),
   appMain: document.getElementById('app-main'),
+
+  backToTopBtn: document.getElementById('back-to-top-btn'),
 };

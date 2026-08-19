@@ -5,6 +5,14 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project uses [Semantic Versioning](https://semver.org/).
 
+## [1.1.0] - 2026-08-19
+
+### Added
+
+- A floating "back to top" button that appears once you've scrolled down
+  the page and smooth-scrolls back to the top on click. Hidden when
+  printing (issue #8).
+
 ## [1.0.1] - 2026-08-18
 
 ### Fixed
