@@ -50,33 +50,47 @@ export function isAnswered(question, answers) {
   return a.value !== undefined && a.value !== null && String(a.value).trim() !== '';
 }
 
-// 'unanswered' | 'compliant' | 'non-compliant' | 'answered'
+// 'unanswered' | 'compliant' | 'non-compliant' | 'warning' | 'answered'
+//
+// A question with `followUpQuestionId` set (e.g. A6.4.1, A6.5.1) isn't flagged
+// non-compliant purely for a non-compliant answer — the question set lets the
+// assessor justify it via a follow-up question instead (e.g. A6.4.2, A6.5.2).
+// Until that follow-up is completed it's a 'warning'; once completed the
+// justification stands and it's treated as 'answered', not 'non-compliant'.
 export function questionStatus(question, answers) {
   if (!isAnswered(question, answers)) return 'unanswered';
   if (question.compliantAnswer) {
     const value = answerValue(answers, question.id);
-    return value === question.compliantAnswer ? 'compliant' : 'non-compliant';
+    if (value === question.compliantAnswer) return 'compliant';
+    if (question.followUpQuestionId) {
+      const followUp = questionsById.get(question.followUpQuestionId);
+      return followUp && isAnswered(followUp, answers) ? 'answered' : 'warning';
+    }
+    return 'non-compliant';
   }
   return 'answered';
 }
 
-// Summarise one section: counts + list of non-compliant questions (visible only).
+// Summarise one section: counts + lists of non-compliant/warning questions (visible only).
 export function summariseSection(sectionId, answers) {
   const qs = questionsForSection(sectionId).filter((q) => isQuestionVisible(q, answers));
   let answeredCount = 0;
   let compliantCount = 0;
   let nonCompliant = [];
+  let warnings = [];
   for (const q of qs) {
     const status = questionStatus(q, answers);
     if (status !== 'unanswered') answeredCount += 1;
     if (status === 'compliant') compliantCount += 1;
     if (status === 'non-compliant') nonCompliant.push(q);
+    if (status === 'warning') warnings.push(q);
   }
   return {
     total: qs.length,
     answered: answeredCount,
     compliant: compliantCount,
     nonCompliant,
+    warnings,
     complete: answeredCount === qs.length && qs.length > 0,
   };
 }
@@ -86,6 +100,7 @@ export function summariseAssessment(answers) {
   let total = 0;
   let answered = 0;
   let nonCompliant = [];
+  let warnings = [];
   let automaticFails = [];
   for (const s of sections) {
     const summary = summariseSection(s.id, answers);
@@ -93,6 +108,7 @@ export function summariseAssessment(answers) {
     total += summary.total;
     answered += summary.answered;
     nonCompliant = nonCompliant.concat(summary.nonCompliant);
+    warnings = warnings.concat(summary.warnings);
   }
   automaticFails = nonCompliant.filter((q) => q.automaticFail);
   return {
@@ -101,6 +117,7 @@ export function summariseAssessment(answers) {
     answered,
     percentComplete: total === 0 ? 0 : Math.round((answered / total) * 100),
     nonCompliant,
+    warnings,
     automaticFails,
     readyToSubmit: answered === total && total > 0,
     likelyCompliant: nonCompliant.length === 0,

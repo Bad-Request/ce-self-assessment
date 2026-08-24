@@ -50,6 +50,7 @@ A single numbered question (e.g. `A4.2`, `A7.14`).
 | `compliantAnswer` | `"Yes" \| "No" \| null` | For `yesno` questions where the question set's CE Requirement implies a specific compliant answer. `null` means informational/no single correct answer (e.g. organisation details, free-text process descriptions). |
 | `automaticFail` | boolean (optional) | Set on the handful of questions the question set explicitly calls out as an automatic fail if answered non-compliantly (e.g. `A6.4`, 14-day critical patching). |
 | `dependsOn` | object \| null | Branching rule — this question is only shown when the condition holds. See below. |
+| `followUpQuestionId` | string (optional) | For a `yesno` question where a non-compliant answer isn't necessarily a real fail because the question set lets the assessor justify it via a specific follow-up question (e.g. `A6.4.1`/`A6.4.2`, `A6.5.1`/`A6.5.2`). While the follow-up is unanswered the question shows as a warning rather than non-compliant; once the follow-up is answered it's treated as answered/justified. |
 
 ### `answerType` values
 
@@ -82,6 +83,9 @@ compliance.
 - Every `dependsOn.questionId` refers to a real `Question.id` that appears
   *before* the dependent question in the question set's own numbering.
 - `compliantAnswer` is only set on `yesno` questions.
+- `followUpQuestionId`, if set, refers to a real `Question.id` whose own
+  `dependsOn` shows it exactly when this question is answered
+  non-compliantly.
 - Question and guidance text should be reproduced verbatim from the official
   question set (whitespace-normalised only) — do not paraphrase, since the
   app's guidance panel is relied on as-is.

@@ -5,6 +5,17 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project uses [Semantic Versioning](https://semver.org/).
 
+## [1.4.0] - 2026-08-24
+
+### Changed
+
+- A6.4.1 and A6.5.1 (auto updates enabled for OS / applications) no longer
+  flag as "Not compliant" when answered "No" — an assessor may have a valid
+  justification, given via the A6.4.2/A6.5.2 follow-up question. They now
+  show a "Follow-up required" warning until that follow-up question is
+  completed, at which point they're treated as answered rather than
+  non-compliant (issue #22).
+
 ## [1.3.0] - 2026-08-19
 
 ### Changed
