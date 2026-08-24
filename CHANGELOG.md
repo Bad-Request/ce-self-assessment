@@ -5,6 +5,14 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project uses [Semantic Versioning](https://semver.org/).
 
+## [1.4.1] - 2026-08-24
+
+### Changed
+
+- Moved the footer (attribution and version/changelog link) into the
+  sidebar, anchored to the bottom of the viewport, instead of at the end
+  of the page (issue #25).
+
 ## [1.4.0] - 2026-08-24
 
 ### Changed
