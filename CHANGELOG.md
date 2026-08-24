@@ -14,6 +14,14 @@ and this project uses [Semantic Versioning](https://semver.org/).
   questions are listed on the dashboard, alongside non-compliant answers
   and warnings, with a jump link to each (issue #24).
 
+## [1.4.1] - 2026-08-24
+
+### Changed
+
+- Moved the footer (attribution and version/changelog link) into the
+  sidebar, anchored to the bottom of the viewport, instead of at the end
+  of the page (issue #25).
+
 ## [1.4.0] - 2026-08-24
 
 ### Changed
