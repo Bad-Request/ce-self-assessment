@@ -10,6 +10,7 @@ const STATUS_LABEL = {
   unanswered: 'Not yet answered',
   compliant: 'Compliant',
   'non-compliant': 'Not compliant',
+  warning: 'Follow-up required',
   answered: 'Answered',
 };
 

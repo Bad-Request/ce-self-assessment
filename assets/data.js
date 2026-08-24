@@ -1663,7 +1663,8 @@ window.CE_DATASET = {
       "multiSelect": false,
       "requirement": "CE Requirement: All software on in-scope devices must have automatic updates enabled where possible.",
       "compliantAnswer": "Yes",
-      "dependsOn": null
+      "dependsOn": null,
+      "followUpQuestionId": "A6.4.2"
     },
     {
       "id": "A6.4.2",
@@ -1708,7 +1709,8 @@ window.CE_DATASET = {
       "multiSelect": false,
       "requirement": "CE Requirement: All software on in-scope devices must have automatic updates enabled where possible.",
       "compliantAnswer": "Yes",
-      "dependsOn": null
+      "dependsOn": null,
+      "followUpQuestionId": "A6.5.2"
     },
     {
       "id": "A6.5.2",
