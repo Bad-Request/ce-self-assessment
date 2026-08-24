@@ -32,6 +32,7 @@ export function createAssessment(name) {
     createdAt: nowIso(),
     updatedAt: nowIso(),
     answers: {},
+    flags: {},
   };
   assessments.unshift(assessment);
   currentId = assessment.id;
@@ -75,6 +76,24 @@ export function clearAnswer(questionId) {
   persist();
 }
 
+export function isFlagged(questionId) {
+  const a = getCurrent();
+  return Boolean(a && a.flags && a.flags[questionId]);
+}
+
+export function toggleFlag(questionId) {
+  const a = getCurrent();
+  if (!a) return;
+  if (!a.flags) a.flags = {};
+  if (a.flags[questionId]) {
+    delete a.flags[questionId];
+  } else {
+    a.flags[questionId] = true;
+  }
+  a.updatedAt = nowIso();
+  persist();
+}
+
 export function importAssessment(data) {
   const assessment = {
     id: uid(),
@@ -82,6 +101,7 @@ export function importAssessment(data) {
     createdAt: data.createdAt || nowIso(),
     updatedAt: nowIso(),
     answers: data.answers && typeof data.answers === 'object' ? data.answers : {},
+    flags: data.flags && typeof data.flags === 'object' ? data.flags : {},
   };
   assessments.unshift(assessment);
   currentId = assessment.id;

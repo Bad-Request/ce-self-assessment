@@ -110,6 +110,9 @@ a `file://` URL will not work**. Serve the folder instead:
 - Dashboard: overall completion progress, a list of any flagged
   non-compliant answers (with a jump link to each), and a per-section
   progress breakdown.
+- Mark any question for follow-up regardless of its compliance status —
+  useful for questions you want to revisit before submitting. Flagged
+  questions are listed on the dashboard with a jump link to each.
 - Multiple named, saved assessments (e.g. one per organisation/renewal).
 - Export/import assessments as JSON.
 - Print / save as PDF (use your browser's print dialog).
