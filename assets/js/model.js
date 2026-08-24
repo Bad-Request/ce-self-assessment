@@ -95,6 +95,12 @@ export function summariseSection(sectionId, answers) {
   };
 }
 
+// Questions flagged for follow-up, in question-set order (visible only).
+export function flaggedQuestions(answers, flags) {
+  if (!flags) return [];
+  return questions.filter((q) => flags[q.id] && isQuestionVisible(q, answers));
+}
+
 export function summariseAssessment(answers) {
   const perSection = {};
   let total = 0;

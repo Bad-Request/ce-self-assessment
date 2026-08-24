@@ -2,7 +2,7 @@
 
 import { dom } from './dom.js';
 import { sections, questions, questionsForSection, isQuestionVisible, questionStatus, getQuestion } from './model.js';
-import { getCurrent, setAnswer } from './assessments.js';
+import { getCurrent, setAnswer, isFlagged, toggleFlag } from './assessments.js';
 import { debounce } from './utils.js';
 import { showToast } from './ui-shell.js';
 
@@ -124,11 +124,19 @@ function buildQuestionCard(question, answers) {
   const status = questionStatus(question, answers);
   const notes = currentNotes(answers, question.id);
   const needsNotesField = question.answerType !== 'text';
+  const flagged = isFlagged(question.id);
 
-  return `<div class="question-card status-${status}" id="q-${question.id}" data-qid="${question.id}">
+  return `<div class="question-card status-${status}${flagged ? ' flagged' : ''}" id="q-${question.id}" data-qid="${question.id}">
     <div class="question-head">
       <span class="question-id">${question.id}</span>
-      <span class="status-badge status-${status}">${STATUS_LABEL[status]}</span>
+      <div class="question-head-actions">
+        <button type="button" class="flag-btn${flagged ? ' active' : ''}" data-flag-qid="${question.id}"
+          aria-pressed="${flagged}" aria-label="${flagged ? 'Unflag question' : 'Flag question for follow-up'}"
+          title="${flagged ? 'Unflag question' : 'Flag question for follow-up'}">
+          ${flagged ? '\u{1F6A9} Flagged' : '⚑ Flag'}
+        </button>
+        <span class="status-badge status-${status}">${STATUS_LABEL[status]}</span>
+      </div>
     </div>
     <p class="question-text">${escapeHtml(question.text)}</p>
     ${question.requirement ? `<p class="requirement">${escapeHtml(question.requirement)}</p>` : ''}
@@ -232,7 +240,7 @@ function updateCardStatus(qid) {
   const assessment = getCurrent();
   if (!assessment) return;
   const status = questionStatus(question, assessment.answers);
-  card.className = `question-card status-${status}`;
+  card.className = `question-card status-${status}${isFlagged(qid) ? ' flagged' : ''}`;
   const badge = card.querySelector('.status-badge');
   if (badge) {
     badge.className = `status-badge status-${status}`;
@@ -289,6 +297,13 @@ function attachHandlers() {
       const answers = getCurrent().answers;
       const existingValue = answers[qid] ? answers[qid].value : undefined;
       debouncedTextSave(qid, existingValue, el.value);
+    });
+  });
+
+  dom.framework.querySelectorAll('.flag-btn').forEach((el) => {
+    el.addEventListener('click', () => {
+      toggleFlag(el.dataset.flagQid);
+      rerenderCallback?.({});
     });
   });
 }

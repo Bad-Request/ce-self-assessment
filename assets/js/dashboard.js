@@ -1,7 +1,7 @@
 // Progress bar, compliance summary and per-section breakdown.
 
 import { dom } from './dom.js';
-import { sections, summariseAssessment } from './model.js';
+import { sections, summariseAssessment, flaggedQuestions } from './model.js';
 import { getCurrent } from './assessments.js';
 
 function escapeHtml(str) {
@@ -61,6 +61,20 @@ export function renderDashboard() {
         </ul>`;
     }
   }
+
+  const flagged = flaggedQuestions(assessment.answers, assessment.flags);
+  if (flagged.length > 0) {
+    complianceHtml += `
+      <p class="compliance-note compliance-flagged">
+        ${flagged.length} question${flagged.length === 1 ? '' : 's'} flagged for follow-up.
+      </p>
+      <ul class="flagged-list">
+        ${flagged
+          .map((q) => `<li><a href="#q-${q.id}" data-jump-id="${q.id}">${q.id}</a> — ${escapeHtml(q.text.split('\n')[0])}</li>`)
+          .join('')}
+      </ul>`;
+  }
+
   dom.complianceSummary.innerHTML = complianceHtml;
 
   dom.sectionBars.innerHTML = sections

@@ -5,6 +5,15 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project uses [Semantic Versioning](https://semver.org/).
 
+## [1.5.0] - 2026-08-24
+
+### Added
+
+- Questions can now be flagged for follow-up independently of their
+  compliance status, via a "Flag" button on each question card. Flagged
+  questions are listed on the dashboard, alongside non-compliant answers
+  and warnings, with a jump link to each (issue #24).
+
 ## [1.4.0] - 2026-08-24
 
 ### Changed
